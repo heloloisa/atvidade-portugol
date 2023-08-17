@@ -1,0 +1,25 @@
+programa
+{
+	inclua biblioteca Util -->u
+	inclua biblioteca Graficos
+ -->g
+	
+	funcao inicio()
+	{
+	//funcao carregar_imagens()
+	g.iniciar_modo_grafico(verdadeiro)
+	g.definir_dimensoes_janela(700, 500)
+	g.definir_titulo_janela("NomeJogo")
+
+	inteiro nova_cor = g.criar_cor(250,0,0)
+	g.definir_cor(nova_cor)
+	
+
+	g.renderizar()
+	u.aguarde(10000)
+
+
+
+	
+	}
+}
