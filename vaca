@@ -1,0 +1,43 @@
+programa
+{
+	inclua biblioteca Util -->u
+	inclua biblioteca Texto
+	
+	funcao inicio()
+	{
+	cadeia usuario
+
+	escreva("Seja bem vindo ao ******, \n")
+	u.aguarde(3000)
+	escreva("	Nesse jogo ocê entrará em grandes aventuras!!\n")
+	u.aguarde(3000)
+	escreva("		Me fala seu nome meu fi \n")
+	leia(usuario)
+	escreva("Agora um pouco sobre a história do temido(a) ", usuario)                                     
+     escreva(" *@@@@@@@@@@::-::+#######+:::::###*####@@#         \n")                             
+     escreva("*@@@@@@@@@@@@@@@=       -@@@@@        @@#           \n")                           
+     escreva(".@@@@@@@@@@%              ..%%%%%%%%@@@%%%%%%#**#%%%:          \n")                      
+     escreva("=====#@@==-                @@%==========#@@@%%@@@@@*++++-       \n")                   
+     escreva("      +@@   ..      ...     @@*          =%%@@@@@@@@%%%@@#..     \n")                 
+     escreva("      +@@  :@@=    .@@+     @@*             #@@@@@@@-  @@@@@-.    \n")             
+     escreva("      +@@  :@@=    .@@*     @@*             ........   @@#..+%%    \n")           
+     escreva("      +@@..:**-.....**=..   @@*     ========.          @@*  *@@     \n")          
+     escreva("   ..+%%:::-:::::::---::.  @@*   ..@@@@@@@@:          @@*  *@@       \n")        
+     escreva("   :@@+::::-#%*::::-@@#:::::@@#..*@@@@@@@@@@:      ..  @@*  *@@       \n")        
+     escreva("   :@@+:::::==-:::::==-:::::@@*  +@@@@@@@*::           @@*  *@@##*     \n")      
+     escreva("   .+++++::::::::::::::::=++++-  -+++++++:             @@*  *@@@@*      \n")     
+     escreva("      +@@----------------#@@                           @@*  *@@@@*       \n")    
+     escreva("        @@@@@@@@@@@@@@@@:       +@@@@%:::::::-@@@@@-  @@*  *@@            \n") 
+     escreva("        ::::::::%@@::+@@%####+  +@@::-**=:::::==*@@-  @@*  .::             \n")
+     escreva("                 #@%  -@@#**@@*  +@@  :@@+..=++..=@@-  @@*                  \n")
+     escreva("                 *@%  =@@:  @@*  +@@  :@@=  %@@  -@@-  %#=                   \n")
+     escreva("                %@@@@@@@:  @@@@@@@@  :@@@@@@@@  -@@%#%@@*                     \n")
+     escreva("               %@@@@@@@:  @@@@@@@@  :@@@@@@@@  -%#%%@@@*             ..    
+                              +*******.  ********  .*******+  :++*****=                   
+                                                                                          
+	
+	
+	//oce pode ate trupica mas tu nao cai
+	
+	}
+}
