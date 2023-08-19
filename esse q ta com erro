@@ -1,0 +1,51 @@
+programa
+{
+	inclua biblioteca Teclado -->t
+	inclua biblioteca Mouse -->m
+	inclua biblioteca Graficos -->g
+	inclua biblioteca Util -->u
+
+	logico direita=falso, esquerda=falso,cima=falso,baixo=falso
+	
+	funcao inicio(){}
+		
+	funcao play()
+	{
+		g.iniciar_modo_grafico(verdadeiro)
+		g.definir_dimensoes_janela(900,600)
+		
+	enquanto(verdadeiro){
+			g.definir_cor(g.COR_AZUL)	
+			g.limpar() //g.limpar na verdade pinta, e nao limpa.
+
+			g.definir_cor(g.COR_VERMELHO)
+			g.definir_tamanho_texto(100.0)
+			g.desenhar_texto(70, 265, "oiiiiiiii")
+			
+			g.definir_cor(-647000005) //definirá a cor somente dos proximos comandos, e nao dos anteriores.
+			g.desenhar_retangulo(200, 400, 500, 125, falso, verdadeiro)
+			g.renderizar() //serve para desenahr todos os comandos acima.
+	}
+	}funcao teclado()
+	{
+		se(t.tecla_pressionada(t.TECLA_SETA_DIREITA){
+			direita=verdadeiro
+		}
+		senao se(t.tecla_pressionada(t.TECLA_SETA_ESQUERDA)
+		{
+			esquerda=verdadeiro
+		}
+		senao se(t.tecla_pressionada(t.TECLA_SETA_ACIMA)
+		{
+			cima=verdadeiro
+		}
+		senao se(t.tecla_pressionada(t.TECLA_SETA_ABAIXO)
+		{
+			baixo=verdadeiro
+		}
+
+
+
+	
+	}
+}
