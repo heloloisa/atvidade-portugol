@@ -4,48 +4,82 @@ programa
 	inclua biblioteca Mouse -->m
 	inclua biblioteca Graficos -->g
 	inclua biblioteca Util -->u
-
+//--------------------------------------------------------------
+	const inteiro LARGURA = 900
+	const inteiro ALTURA = 600
 	logico direita=falso, esquerda=falso,cima=falso,baixo=falso
+	inteiro xusuario = 275
+	inteiro yusuario = 275
+	inteiro delay = 120
 	
-	funcao inicio(){}
-		
+	funcao inicio()
+	{
+		play()
+		enquanto(verdadeiro)
+		{
+			pintar_janela()
+			desenho_usuario()
+			desenhar_painel()
+			teclado()
+			mover()
+			
+		}
+	}
 	funcao play()
 	{
 		g.iniciar_modo_grafico(verdadeiro)
-		g.definir_dimensoes_janela(900,600)
-		
-	enquanto(verdadeiro){
+		g.definir_dimensoes_janela(LARGURA,ALTURA)
+		g.definir_titulo_janela("uai")
+	}
+	funcao pintar_janela()
+	{
 			g.definir_cor(g.COR_AZUL)	
 			g.limpar() //g.limpar na verdade pinta, e nao limpa.
-
+	}
+	funcao desenhar_painel(){
 			g.definir_cor(g.COR_VERMELHO)
 			g.definir_tamanho_texto(100.0)
-			g.desenhar_texto(70, 265, "oiiiiiiii")
+			g.desenhar_texto(70, 265, "oii")
 			
 			g.definir_cor(-647000005) //definirá a cor somente dos proximos comandos, e nao dos anteriores.
 			g.desenhar_retangulo(200, 400, 500, 125, falso, verdadeiro)
-			g.renderizar() //serve para desenahr todos os comandos acima.
+			g.renderizar() //serve para desenhar todos os comandos acima.
+			u.aguarde(delay)
 	}
-	}funcao teclado()
+	funcao desenho_usuario(){
+		g.definir_cor(g.COR_PRETO)
+		g.desenhar_retangulo(xusuario, yusuario, 25, 25, falso, verdadeiro)
+	}
+	funcao teclado() //ainda nao é isso que vai fazer o personagem mover
 	{
-		se(t.tecla_pressionada(t.TECLA_SETA_DIREITA){
+		se(t.tecla_pressionada(t.TECLA_SETA_DIREITA)){
 			direita=verdadeiro
+			esquerda=falso
+			cima=falso
+			baixo=falso
 		}
-		senao se(t.tecla_pressionada(t.TECLA_SETA_ESQUERDA)
-		{
+		senao se(t.tecla_pressionada(t.TECLA_SETA_ESQUERDA)){
 			esquerda=verdadeiro
+			direita=falso
+			cima=falso
+			baixo=falso
 		}
-		senao se(t.tecla_pressionada(t.TECLA_SETA_ACIMA)
-		{
+		senao se(t.tecla_pressionada(t.TECLA_SETA_ACIMA)){
 			cima=verdadeiro
+			esquerda=falso
+			direita=falso
+			baixo=falso
 		}
-		senao se(t.tecla_pressionada(t.TECLA_SETA_ABAIXO)
-		{
+		senao se(t.tecla_pressionada(t.TECLA_SETA_ABAIXO)){
 			baixo=verdadeiro
+			esquerda=falso
+			direita=falso
+			cima=falso
 		}
-
-
-
-	
 	}
-}
+	funcao mover()
+	{
+		se(direita){
+			xusuario +=25
+		}
+}}
