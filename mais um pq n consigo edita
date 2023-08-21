@@ -1,0 +1,63 @@
+programa
+{
+    
+    
+    inclua biblioteca Graficos--> g
+    inclua biblioteca Util--> u
+    
+    cadeia usuario
+
+
+    
+    funcao inicio()
+    {
+        bemvindo ()
+        introducao()
+    }
+    funcao bemvindo (){
+        
+       inteiro tempo 
+       
+		para(tempo=0;tempo<5;tempo++)
+		{
+			escreva("		 ######  ########       ##    ###       ########  ######## ##     ##         ##     ## #### ##    ## ########   #######   \n")
+			escreva("		##    ## ##             ##   ## ##      ##     ## ##       ###   ###         ##     ##  ##  ###   ## ##     ## ##     ## \n")
+			escreva("		##       ##             ##  ##   ##     ##     ## ##       #### ####         ##     ##  ##  ####  ## ##     ## ##     ## \n")
+			escreva("		 ######  ######         ## ##     ##    ########  ######   ## ### ## ####### ##     ##  ##  ## ## ## ##     ## ##     ## \n")
+			escreva("		      ## ##       ##    ## #########    ##     ## ##       ##     ##          ##   ##   ##  ##  #### ##     ## ##     ## \n")
+			escreva("		##    ## ##       ##    ## ##     ##    ##     ## ##       ##     ##           ## ##    ##  ##   ### ##     ## ##     ## \n")
+			escreva("		 ######  ########  ######  ##     ##    ########  ######## ##     ##            ###    #### ##    ## ########   #######  \n")
+			
+			u.aguarde(500)
+			limpa()
+          	u.aguarde(500)                                                                                       
+		}
+       	u.aguarde(1000)
+        	limpa()
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+		escreva(" *    ┓┏┏┓┏┳┏┓  ┓┏┏┓┏┓┏┓  ┏┓┳┳┓┳┓┏┓┳┓┏┓┏┓┳┓┏┓  ┏┓┳┳┓  ┳┳┳┳┓┏┓  ┏┳┏┓┳┓┳┓┏┓┳┓┏┓  ┳┳┓┳┏┓┏┳┓┳┏┓┏┓  ┏┓  ┏┓┓┏┏┓┳┏┓  ┳┓┏┓  ┳┳┓┳┏┓┏┳┓┏┓┳┓┳┏┓┏┓\n")
+		escreva(" *    ┣┫┃┃ ┃┣   ┃┃┃┃┃ ┣   ┣ ┃┃┃┣┫┣┫┣┫┃ ┣┫┣┫┣┫  ┣ ┃┃┃  ┃┃┃┃┃┣┫   ┃┃┃┣┫┃┃┣┫┃┃┣┫  ┃┃┃┃┗┓ ┃ ┃┃ ┣┫  ┣   ┃ ┣┫┣ ┃┣┫  ┃┃┣   ┃┃┃┃┗┓ ┃ ┣ ┣┫┃┃┃┗┓\n")
+		escreva(" *    ┛┗┗┛┗┛┗┛  ┗┛┗┛┗┛┗┛  ┗┛┛ ┗┻┛┛┗┛┗┗┛┛┗┛┗┛┗  ┗┛┛ ┗  ┗┛┛ ┗┛┗  ┗┛┗┛┛┗┛┗┛┗┻┛┛┗  ┛ ┗┻┗┛ ┻ ┻┗┛┛┗  ┗┛  ┗┛┛┗┗┛┻┛┗  ┻┛┗┛  ┛ ┗┻┗┛ ┻ ┗┛┛┗┻┗┛┗┛ \n")
+                                                                                                                                   
+		
+
+        u.aguarde(5000)
+        limpa()
+            escreva("MAS PRIMEIRO ESCOLHA SEU NOME DE EXPLORADOR!\n| ")
+        leia(usuario)
+    }    
+        funcao introducao (){
+    
+		
+        u.aguarde(1000)
+        escreva ("                   ------------------------contexto------------------------\n \n")
+        u.aguarde(1000)
+        
+           escreva("Narração: \n","	",  usuario, "era um camponês humilde, do interior do (sorteia estado) que não tinha muitas esperanças para o futuro. \n No sítio onde você vivia não havia escolas nas redondezas, logo você não tinha amigos, e nem estudo. \n") 
+           u.aguarde(3000)
+		 escreva("	Desde pequeno sua única companhia eram os animais da fazenda e seus pais. \n ")
+		 u.aguarde(2300)
+		 escreva("Então quando você não estava carpindo ou trabalhando na lavoura, você estava passando o tempo com eles. \n")
+
+        }
+}
