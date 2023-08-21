@@ -11,7 +11,7 @@ programa
     
     funcao inicio()
     {
-        bemvindo ()
+        
         introducao()
     }
     funcao bemvindo (){
@@ -58,6 +58,14 @@ programa
 		 escreva("	Desde pequeno sua única companhia eram os animais da fazenda e seus pais. \n ")
 		 u.aguarde(2300)
 		 escreva("Então quando você não estava carpindo ou trabalhando na lavoura, você estava passando o tempo com eles. \n")
+	u.aguarde(1000)
+		escreva("	Os seus dias começavam cedo")
+		u.aguarde(800)
+		escreva(".")
+		u.aguarde(800)
+		escreva(".")
+		u.aguarde(800)
+		escreva(".")
 
         }
 }
