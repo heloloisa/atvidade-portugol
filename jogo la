@@ -1,0 +1,67 @@
+programa
+{
+    
+    
+    inclua biblioteca Graficos--> g
+    inclua biblioteca Util--> u
+    
+    cadeia usuario
+
+
+    
+    funcao inicio()
+    {
+        
+        bemvindo()
+        introducao()
+    }
+    funcao bemvindo (){
+        
+       inteiro tempo 
+       
+		para(tempo=0;tempo<5;tempo++)
+		{
+		escreva("		 ######  ########       ##    ###       ########  ######## ##     ##         ##     ## #### ##    ## ########   #######   \n")
+		escreva("		##    ## ##             ##   ## ##      ##     ## ##       ###   ###         ##     ##  ##  ###   ## ##     ## ##     ## \n")
+		escreva("		##       ##             ##  ##   ##     ##     ## ##       #### ####         ##     ##  ##  ####  ## ##     ## ##     ## \n")
+		escreva("		 ######  ######         ## ##     ##    ########  ######   ## ### ## ####### ##     ##  ##  ## ## ## ##     ## ##     ## \n")
+		escreva("		      ## ##       ##    ## #########    ##     ## ##       ##     ##          ##   ##   ##  ##  #### ##     ## ##     ## \n")
+		escreva("		##    ## ##       ##    ## ##     ##    ##     ## ##       ##     ##           ## ##    ##  ##   ### ##     ## ##     ## \n")
+		escreva("		 ######  ########  ######  ##     ##    ########  ######## ##     ##            ###    #### ##    ## ########   #######  \n")
+		u.aguarde(500)
+		limpa()
+          u.aguarde(500)                                                                                       
+		}
+        u.aguarde(1000)
+        limpa()
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+ 		
+
+escreva(" *    ┓┏┏┓┏┳┏┓  ┓┏┏┓┏┓┏┓  ┏┓┳┳┓┳┓┏┓┳┓┏┓┏┓┳┓┏┓  ┏┓┳┳┓  ┳┳┳┳┓┏┓  ┏┳┏┓┳┓┳┓┏┓┳┓┏┓  ┳┳┓┳┏┓┏┳┓┳┏┓┏┓  ┏┓  ┏┓┓┏┏┓┳┏┓  ┳┓┏┓  ┳┳┓┳┏┓┏┳┓┏┓┳┓┳┏┓┏┓\n")
+escreva(" *    ┣┫┃┃ ┃┣   ┃┃┃┃┃ ┣   ┣ ┃┃┃┣┫┣┫┣┫┃ ┣┫┣┫┣┫  ┣ ┃┃┃  ┃┃┃┃┃┣┫   ┃┃┃┣┫┃┃┣┫┃┃┣┫  ┃┃┃┃┗┓ ┃ ┃┃ ┣┫  ┣   ┃ ┣┫┣ ┃┣┫  ┃┃┣   ┃┃┃┃┗┓ ┃ ┣ ┣┫┃┃┃┗┓\n")
+escreva(" *    ┛┗┗┛┗┛┗┛  ┗┛┗┛┗┛┗┛  ┗┛┛ ┗┻┛┛┗┛┗┗┛┛┗┛┗┛┗  ┗┛┛ ┗  ┗┛┛ ┗┛┗  ┗┛┗┛┛┗┛┗┛┗┻┛┛┗  ┛ ┗┻┗┛ ┻ ┻┗┛┛┗  ┗┛  ┗┛┛┗┗┛┻┛┗  ┻┛┗┛  ┛ ┗┻┗┛ ┻ ┗┛┛┗┻┗┛┗┛ \n")
+                                                                                                                                   
+
+
+
+
+
+
+
+			
+        u.aguarde(10000)
+        limpa()
+            escreva("MAS PRIMEIRO ESCOLHA SEU NOME DE EXPLORADOR!\n| ")
+        leia(usuario)
+    }    
+        funcao introducao (){
+        	estados ["0-Paraná
+		
+        u.aguarde(1000)
+        
+           escreva(usuario, " era um camponês humilde, do interior do (sorteia estado) que não tinha muitas esperanças para o futuro. No sítio onde você vivia não havia escolas nas redondezas, logo " , usuario , " não tinha amigos, e nem estudo.") 
+
+
+        }
+}
