@@ -7,7 +7,7 @@ programa
     inclua biblioteca Graficos--> g
     inclua biblioteca Util--> u
     
-    cadeia usuario
+     cadeia usuario
 	inteiro opcao = 0
 	cadeia estado
 	inteiro tempo
@@ -15,7 +15,7 @@ programa
     funcao inicio()
     
     {
-       cheque()
+      
         tabela()
        
         
@@ -205,7 +205,7 @@ programa
 		u.aguarde(500)
 		next()
 			
-		escreva_devagar("[NARRADOR] Porém, sua vida deu uma reviravolta triste quando seus pais faleceram, deixando-o sozinho para cuidar da fazenda e dos animais.\n[NARRADOR] Essa perda devastadora te abalou profundamente .\n[NARRADOR] E com isso, você acabou percebendo que cuidar de uma fazenda sem a ajuda deles era muito mais complicado do que você imaginava...\n[NARRADOR] Com isso, percebeu que precisava buscar a ajuda de alguém, porém não tinha certeza de quem confiar.\n")
+		escreva_devagar("[NARRADOR] Porém, sua vida deu uma reviravolta triste quando seus pais faleceram, deixando-o sozinho para cuidar da fazenda e dos animais.\n[NARRADOR] Essa perda devastadora te abalou profundamente .\n[NARRADOR] E com isso, você acabou percebendo que cuidar de uma fazenda sem a ajuda deles era muito mais complicado do que você imaginava...\n[NARRADOR] Havia percebido que precisava buscar a ajuda de alguém, porém não tinha certeza de quem confiar.\n")
 		next()
 		
 		escreva_devagar("							SUAS OPÇÕES ERAM: \n\n ✷Ou pedir ajuda a um amigo de seus falecidos pais, que pode vir a ser mais confiável do que um estranho. \n ✷Ou pedir a ajuda de seu vizinho de longa data, do qual costumava ir á sua casa para tomar café e conversar com você e sua família.\n\n\n")
@@ -247,6 +247,24 @@ programa
       			cap2()
       		}
       	}
+      		se(opcao == 2){
+				escreva_devagar(" Você decidiu pedir ajuda de Emanuel, amigo de seus falecidos pais. Porque achou que ele era mais confiável, já que se recorda muito bem de seus pais falarem bastante com esse amigo. \n")
+				u.aguarde(1000)
+				para(tempo=0;tempo<3;tempo++)
+				{
+      				escreva("***TELEFONE TOCANDO***")
+      				u.aguarde(300)
+      				limpa()
+      				u.aguarde(300)
+      			}
+      				
+      			escreva_devagar("[Emanuel] Alô? \n["+usuario+"]: Oi Emanuel, é o "+usuario+" desculpe ligar assim do nada mas, gostaria de te pedir um grande favor.\n[EManuel] Ah sim, do que você precisa?\n["+usuario"] Então, como você já deve estar sabendo... Meus pais faleceram recentemente. \n[EManuel] Nossa, sério?!?! Meu pêsames pela sua perda.\n["+usuario+"]Obrigado. Quando ainda vivos, eram eles que me ajudavam a cuidar da fazenda, e eu me recordo de você vindo aqui e nos ajudando em algumas coisas também. Gostaria de saber se você poderia me ajudar a cuidar da fazenda por alguns dias. Somente até que eu me acostume ao cotidiano da fazenda sem meus pais. \n [Emanuel] Eu te ajudo, mas só se você deixar algum quarto livre para que eu possa ultilizá-lo durante minah estadia. \n ["+usuario"] Feito! Obrigado.")
+      				
+
+
+      			
+      		}
+      
       }
 
       funcao morte()
@@ -274,33 +292,34 @@ programa
 		escreva("	  `:::::`::::::::;' /  / `:#\n")
 		escreva("	   ::::::`:::::;'  /  /   `#\n")
   }
-      funcao cheque(){                                                               
-   		    	                                                                        ▓▓████▒▒      
-                                                                  ██▒▒  ░░▓▓██    
-                                                                ██            ██  
-                                                              ░░                ██
-                                                              ██          ▒▒▓▓  ██
-    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  ██  ▓▓    ▓▓▒▒    ▓▓
-    ██                                                        ██  ▒▒▓▓░░██      ▓▓
-    ██                                                        ▒▒      ░░        ██
-    ██                                                          ██            ██  
-    ██              ██████████████████                          ░░▓▓        ▓▓░░  
-    ██                                                            ▓▓██▓▓▓▓██▓▓    
-    ██                                                                ▒▒░░        
-    ██                                                                ▒▒          
-    ██                                                                ▒▒          
-    ██                                              ░░██▓▓██████▓▓    ▒▒          
-    ██                                              ██          ▒▒    ▒▒          
-    ██                                              ▓▓                ▒▒          
-    ██    ░░████████████████████████████████░░      ▒▒████████████    ▒▒          
-    ██                                                                ▒▒          
-    ██                                                                ▒▒          
-    ██                                                                ▒▒          
-    ██      ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒                ▓▓▓▓▓▓▓▓    ▒▒          
-    ██                                                                ▒▒          
-    ██                                                                ▒▒          
-    ██                                                                ░░          
-    ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░▓▓          
+      funcao cheque(){   
+      	                                                            
+		escreva("   		    	                                                                        ▓▓████▒▒      \n")
+		escreva("                                                                  ██▒▒  ░░▓▓██    \n")
+		escreva("                                                                ██            ██  \n")
+		escreva("                                                              ░░                ██\n")
+		escreva("                                                              ██          ▒▒▓▓  ██\n")
+		escreva("    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  ██  ▓▓    ▓▓▒▒    ▓▓\n")
+		escreva("    ██                                                        ██  ▒▒▓▓░░██      ▓▓\n")
+		escreva("    ██                           dia:14/08/20048              ▒▒      ░░        ██\n")
+		escreva("    ██                                                          ██            ██  \n")
+		escreva("    ██            Cheque de ****                                ░░▓▓        ▓▓░░  \n")
+		escreva("    ██            Para:Emanuel ferreira da Silva                  ▓▓██▓▓▓▓██▓▓    \n")
+		escreva("    ██                                                                ▒▒░░        \n")
+		escreva("    ██        Valor: R$ 50.000.000 (Cinquenta milhões)                ▒▒          \n")
+		escreva("    ██                                                                ▒▒          \n")
+		escreva("    ██                                              ░░██▓▓██████▓▓    ▒▒          \n")
+		escreva("    ██                                              ██          ▒▒    ▒▒          \n")
+		escreva("    ██                                              ▓▓                ▒▒          \n")
+		escreva("    ██    ░░████████████████████████████████░░      ▒▒████████████    ▒▒          \n")
+		escreva("    ██                                                                ▒▒          \n")
+		escreva("    ██                                                                ▒▒          \n")
+		escreva("    ██                                                                ▒▒          \n")
+		escreva("    ██      ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒                ▓▓▓▓▓▓▓▓    ▒▒          \n")
+		escreva("    ██                                                                ▒▒          \n")
+		escreva("    ██                                                                ▒▒          \n")
+		escreva("    ██                                                                ░░          \n")
+		escreva("    ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░▓▓          \n")
                                                                                   
                                                                                         
                                                                                   
