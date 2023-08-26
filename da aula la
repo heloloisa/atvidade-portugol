@@ -230,12 +230,17 @@ escreva("  ### ##  ### ###  ### ###  #######            #####     ###    #######
         	escreva("--> ")
         	leia(opcao)
         	next()
-        	cap2()
+        	se (opcao == 1){
+        	calvin()
+        	}
+        	senao se (opcao == 2){
+        		emanuel()
+        	}
+        	
         	
         }
       
-      funcao calivn(){
-      	se (opcao == 1){
+      funcao calvin(){
       		escreva_devagar("[NARRADOR] Voce decidiu pedir ajuda a seu vizinho, que já era um homem experiente em cuidar de lavouras.\n[NARRADOR] Escolheu pedir ajuda a ele principalmente por conta da distancia, porque achou que seria melhor e mais prático pedir ajuda a alguem que mora a menos de um quarteirão de distância de sua moradia.")		 
       		next()
   
