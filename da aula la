@@ -12,6 +12,7 @@ programa
 	cadeia estado
 	inteiro tempo
 	inteiro opcao2= 0
+	cadeia finalera
     
     funcao inicio()
     
@@ -170,6 +171,7 @@ programa
 	
 	funcao fim(){
    		escreva("OBRIGADO POR JOGAR!\n\n\n by: Helo & Dan")
+   		leia(finalera)
    		}
      funcao fimTriste(){
      	escreva_devagar("A MIMOSA MORREU...")	
