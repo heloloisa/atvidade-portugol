@@ -11,6 +11,7 @@ programa
 	inteiro opcao = 0
 	cadeia estado
 	inteiro tempo
+	inteiro opcao2= 0
     
     funcao inicio()
     
@@ -173,7 +174,18 @@ programa
 	funcao fim(){
    		escreva("OBRIGADO POR JOGAR!\n\n\n by: Helo & Dan")
    		}
-     
+     funcao fimTriste(){
+     	escreva_devagar("A MIMOSA MORREU...")	
+     	u.aguarde(2000)
+     	limpa()
+                                                                                 
+escreva("  #####     ###    ##   ##  #######            #####   ### ###  #######  ######  ")
+escreva(" ### ###   #####   ### ###  # ##              ### ###  ### ###  # ##     ### ### ")
+escreva(" ###      ### ###  #######  ######            ### ###  ### ###  ######   ### ### ")
+escreva(" ### ###  ### ###  #######  ####              ### ###  ### ###  ####     ######  ")
+escreva(" ### ###  #######  ### ###  ####              #######   #####   ####     ### ### ")
+escreva("  ### ##  ### ###  ### ###  #######            #####     ###    #######  ### ### \n\n")
+     }
      funcao cap1 (){
      	
     		sorteiaEstado()
@@ -222,17 +234,11 @@ programa
         	
         }
       
-      funcao cap2(){
+      funcao calivn(){
       	se (opcao == 1){
-      		escreva_devagar("[NARRADOR]  Voce decidiu pedir ajuda a seu vizinho, chamado Calvin, que já era um homem experiente em cuidar de lavouras\n")
+      		escreva_devagar("[NARRADOR] Voce decidiu pedir ajuda a seu vizinho, que já era um homem experiente em cuidar de lavouras.\n[NARRADOR] Escolheu pedir ajuda a ele principalmente por conta da distancia, porque achou que seria melhor e mais prático pedir ajuda a alguem que mora a menos de um quarteirão de distância de sua moradia.")		 
       		next()
-      		escreva("1 -- LIGAR PARA O VIZINHO COM O TELEFONE ANTIGO DE SEUS PAIS\n")
-      		escreva("------------------------------------------------------\n")
-      		escreva("2 -- IR ANDANDO ATÉ A CASA DE CALVIN\n")
-      		escreva("--> ")
-      		leia(opcao)
-      		next()
-      			se (opcao == 1){
+  
       				para(tempo=0;tempo<3;tempo++){
       				escreva("***TELEFONE TOCANDO***")
       				u.aguarde(300)
@@ -240,15 +246,54 @@ programa
       				u.aguarde(300)
       				}
       				escreva_devagar("[CALVIN] a-alo!?\n\n["+usuario+"] Olá Calvin, Boa tarde!\n\n[CALVIN] Boa tarde...com quem eu falo?\n\n["+usuario+"] Me chamo "+usuario+", sou filho dos seus ex-vizinhos, e vim aqui te pedi um favor...\n\n[CALVIN] E qual seria esse favor?\n\n["+usuario+"] Com o falecimento dos meus pais tenho tido bastante dificuldade em manter a fazenda\n\n, e como meus pais falavam muito bem de você, imaginei que o senhor poderia me ajudar por um tempo, até eu pegar o jeito.\n*\n*\n[NARRADOR] Calvin ficou em silêncio\n\n\n["+usuario+"] Calvin???\n\n[CALVIN] C-Claro que aceito "+usuario+"!!\n\n["+usuario+"] QUE ALÍVIO! MUITO OBRIGADO CALVIN!\n\n[CALVIN] Por nada, assim que possível vou ir na sua casa ver a situação. " )
-      				
-      		}
-      		senao se (opcao == 2){
-      			escreva_devagar("[NARRADOR] Você decidiu ir até a casa de calvin, mas assim que saiu para fora de casa percebeu que esdtava prestes a chover.\nPara evitar se sujar vc decide tentar falar com ele de outra forma.")
-      			cap2()
-      		}
+					next()
+					escreva_devagar("[NARRADOR] Você confia plenamente em seu vizinho de longa data.\n[NARRADOR] Ele pede ao vizinho que o ajude a cuidar da fazenda e dos animais e do celeiro, acreditando que ele é a pessoa certa para essa tarefa, por ter passado toda sua vida no campo.")
+					next()
+					                                                                                               
+					escreva(" 				 #####         #   #  #####   ###   #####   ###          ####   #####  ####    ###    ###    ###  ")
+					escreva("					     #       	#   #  #      #   #  #      #   #          #  #  #      #   #  #   #    #    #   # ")
+					escreva("					    #          ## ##  #      #      #      #              #  #  #      #   #  #   #    #    #     ")
+					escreva("					   ##          # # #  ####    ###   ####    ###           #  #  ####   ####   #   #    #     ###  ")
+					escreva("					     #         #   #  #          #  #          #          #  #  #      #      #   #    #        # ")
+					escreva("					 #   #         #   #  #      #   #  #      #   #          #  #  #      #      #   #    #    #   # ")
+					escreva("					  ###          #   #  #####   ###   #####   ###          ####   #####  #       ###    ###    ###  ")
+                         next()   
+                         escreva_devagar("[NARRADOR] O vizinho relata ter encontrado algumas tábuas e cercas quebradas, como também diz ter visto um homem de roupas pretas saindo sorrateiramente durante a noite anterior.\n[NARRADOR] Isso já havia acontecido algumas vezes, como seus pais costimavam dizer\n")
+                         next()
+                         escreva_devagar("[NARRADOR] Entretanto quando você foi ver o cercado no qual a mimosa, sua vaca favorita, se encontrava, algo diferente havia acontecido, notastes que ela havia sido machucada, estava com alguns arranhões em suas costas e pernas.")
+                         next()
+                         escreva_devagar("					ESCOLHA:\n\n\n")
+                         escreva("1 -- FAZER UMA RECEITA ANTIGA QUE SEUS PAIS ENSINARAM PARA FERIDAS EM ANIMAIS\n\n-------------------------------\n\n2 -- GRITAR PELO CALVIN POR AJUDA\n\n-------------------------------\n\n3 -- NÃO FAZER NADA\n-->")
+                         leia(opcao2)
+                         	se (opcao2 == 1){
+                         		escreva_devagar("[NARRADOR] Você faz uma receita a base de cannabis e aplicou na ferida de mimosa e ela ficou bem.")
+                         		next()
+                         	}
+                         	se (opcao2 == 2){
+                         		escreva_devagar("[NARRADOR] Você vê o Calvin sentado no sofá da sala enquanto você grita, mas ele finge não ouvir.")
+                         		next()
+                    
+                         		escreva_devagar("[NARRADOR] Você fez um curativo na mimosa e foi correndo até o Calvin")
+                         		next()
+                         		escreva_devagar("["+usuario+"] Por quê você nao foi me ajudar???? A mimosa se machucou!\n[Calvin] Desculpa... eu não ouvi.\n\n[NARRADOR] Você percebeu uma falsidade na resposta dele.")
+                         		next()
+                         	}	
+                         	
+                         	se (opcao == 3){
+                         		escreva_devagar("[NARRADOR] Você não ajudou a mimosa e ela acabou morrendo")
+                         		next()
+                         		morte()
+                         		u.aguarde(2000)
+                         		limpa()
+                         		fimTriste()
+                         		fim()
+                         	}
+                         	                                                                    
       	}
+      }
+      funcao emanuel(){
       		se(opcao == 2){
-				escreva_devagar(" Você decidiu pedir ajuda de Emanuel, amigo de seus falecidos pais. Porque achou que ele era mais confiável, já que se recorda muito bem de seus pais falarem bastante com esse amigo. \n")
+				escreva_devagar(" Você decidiu pedir ajuda de Emanuel, amigo de seus falecidos pais. Porque achou que ele era mais confiável, já que se recorda muito bem de seus pais falarem bastante com esse amigo.")
 				u.aguarde(1000)
 				para(tempo=0;tempo<3;tempo++)
 				{
@@ -258,11 +303,8 @@ programa
       				u.aguarde(300)
       			}
       				
-      			escreva_devagar("[Emanuel] Alô? \n["+usuario+"]: Oi Emanuel, é o "+usuario+" desculpe ligar assim do nada mas, gostaria de te pedir um grande favor.\n[EManuel] Ah sim, do que você precisa?\n["+usuario"] Então, como você já deve estar sabendo... Meus pais faleceram recentemente. \n[EManuel] Nossa, sério?!?! Meu pêsames pela sua perda.\n["+usuario+"]Obrigado. Quando ainda vivos, eram eles que me ajudavam a cuidar da fazenda, e eu me recordo de você vindo aqui e nos ajudando em algumas coisas também. Gostaria de saber se você poderia me ajudar a cuidar da fazenda por alguns dias. Somente até que eu me acostume ao cotidiano da fazenda sem meus pais. \n [Emanuel] Eu te ajudo, mas só se você deixar algum quarto livre para que eu possa ultilizá-lo durante minah estadia. \n ["+usuario"] Feito! Obrigado.")
-      				
-
-
-      			
+      			escreva_devagar("[Emanuel] Alô? \n["+usuario+"]: Oi Emanuel, é o "+usuario+" desculpe ligar assim do nada mas, gostaria de te pedir um grande favor.\n[Emanuel] Ah sim, do que você precisa?\n["+usuario+"] Então, como você já deve estar sabendo... Meus pais faleceram recentemente. \n[EManuel] Nossa, sério?!?! Meu pêsames pela sua perda.\n["+usuario+"] Obrigado. Quando ainda vivos, eram eles que me ajudavam a cuidar da fazenda, e eu me recordo de você vindo aqui e nos ajudando em algumas coisas também. Gostaria de saber se você poderia me ajudar a cuidar da fazenda por alguns dias. Somente até que eu me acostume ao cotidiano da fazenda sem meus pais. \n [Emanuel] Eu te ajudo, mas só se você deixar algum quarto livre para que eu possa ultilizá-lo durante minah estadia. \n ["+usuario+"] Feito! Obrigado.")
+	
       		}
       
       }
@@ -353,15 +395,3 @@ programa
 		}	
 	}	
 }
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 5997; 
- * @DOBRAMENTO-CODIGO = [22, 124, 121, 172];
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
