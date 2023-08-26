@@ -142,9 +142,9 @@ programa
         	limpa()
         	
          	escreva("                                                                                                                              /\n")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
-		escreva(" *    ┓┏┏┓ ┳┏┓  ┓┏┏┓┏┓┏┓  ┏┓┳┳┓┳┓┏┓┳┓┏┓┏┓┳┓┏┓  ┏┓┳┳┓  ┳┳┳┳┓┏┓   ┳┏┓┳┓┳┓┏┓┳┓┏┓  ┳┳┓┳┏┓┏┳┓┳┏┓┏┓  ┏┓  ┏┓┓┏┏┓┳┏┓  ┳┓┏┓  ┳┳┓┳┏┓┏┳┓┏┓┳┓┳┏┓┏┓\n")
-		escreva(" *    ┣┫┃┃ ┃┣   ┃┃┃┃┃ ┣   ┣ ┃┃┃┣┫┣┫┣┫┃ ┣┫┣┫┣┫  ┣ ┃┃┃  ┃┃┃┃┃┣┫   ┃┃┃┣┫┃┃┣┫┃┃┣┫  ┃┃┃┃┗┓ ┃ ┃┃ ┣┫  ┣   ┃ ┣┫┣ ┃┣┫  ┃┃┣   ┃┃┃┃┗┓ ┃ ┣ ┣┫┃┃┃┗┓\n")
-		escreva(" *    ┛┗┗┛┗┛┗┛  ┗┛┗┛┗┛┗┛  ┗┛┛ ┗┻┛┛┗┛┗┗┛┛┗┛┗┛┗  ┗┛┛ ┗  ┗┛┛ ┗┛┗  ┗┛┗┛┛┗┛┗┛┗┻┛┛┗  ┛ ┗┻┗┛ ┻ ┻┗┛┛┗  ┗┛  ┗┛┛┗┗┛┻┛┗  ┻┛┗┛  ┛ ┗┻┗┛ ┻ ┗┛┛┗┻┗┛┗┛ \n")
+		escreva("     ┓┏┏┓ ┳┏┓  ┓┏┏┓┏┓┏┓  ┏┓┳┳┓┳┓┏┓┳┓┏┓┏┓┳┓┏┓  ┏┓┳┳┓  ┳┳┳┳┓┏┓   ┳┏┓┳┓┳┓┏┓┳┓┏┓  ┳┳┓┳┏┓┏┳┓┳┏┓┏┓  ┏┓  ┏┓┓┏┏┓┳┏┓  ┳┓┏┓  ┳┳┓┳┏┓┏┳┓┏┓┳┓┳┏┓┏┓\n")
+		escreva("     ┣┫┃┃ ┃┣   ┃┃┃┃┃ ┣   ┣ ┃┃┃┣┫┣┫┣┫┃ ┣┫┣┫┣┫  ┣ ┃┃┃  ┃┃┃┃┃┣┫   ┃┃┃┣┫┃┃┣┫┃┃┣┫  ┃┃┃┃┗┓ ┃ ┃┃ ┣┫  ┣   ┃ ┣┫┣ ┃┣┫  ┃┃┣   ┃┃┃┃┗┓ ┃ ┣ ┣┫┃┃┃┗┓\n")
+		escreva("     ┛┗┗┛┗┛┗┛  ┗┛┗┛┗┛┗┛  ┗┛┛ ┗┻┛┛┗┛┗┗┛┛┗┛┗┛┗  ┗┛┛ ┗  ┗┛┛ ┗┛┗  ┗┛┗┛┛┗┛┗┛┗┻┛┛┗  ┛ ┗┻┗┛ ┻ ┻┗┛┛┗  ┗┛  ┗┛┛┗┗┛┻┛┗  ┻┛┗┛  ┛ ┗┻┗┛ ┻ ┗┛┛┗┻┗┛┗┛ \n")
         u.aguarde(5000)
         limpa()
         tabela()
@@ -217,11 +217,19 @@ fim()
 		escreva(". \n")
 		next()
 		
-		escreva_devagar("[NARRADOR] Você ajudava seus pais a cuidar dos animais e a cultivar a terra.\n[NARRADOR] Aprendera com seu pai a arte da agricultura e com sua mãe, os segredos da culinária tradicional da região\n"+"[NARRADOR] À noite, a família se reunia ao redor da fogueira para contar histórias e cantar canções antigas.")
+		escreva_devagar("[NARRADOR] Você ajudava seus pais a cuidar dos animais e a cultivar a terra.\n[NARRADOR] Aprendera com seu pai a arte da agricultura e com sua mãe, os segredos da culinária tradicional da região\n"+"[NARRADOR] À noite, a família se reunia ao redor da fogueira para contar histórias e cantar canções antigas.\n")
 		u.aguarde(500)
 		next()
-			
-		escreva_devagar("[NARRADOR] Porém, sua vida deu uma reviravolta triste quando seus pais faleceram, deixando-o sozinho para cuidar da fazenda e dos animais.\n[NARRADOR] Essa perda devastadora te abalou profundamente .\n[NARRADOR] E com isso, você acabou percebendo que cuidar de uma fazenda sem a ajuda deles era muito mais complicado do que você imaginava...\n[NARRADOR] Havia percebido que precisava buscar a ajuda de alguém, porém não tinha certeza de quem confiar.\n")
+
+		escreva_devagar("[NARRADOR]Algumas vezes seus pais relatavam alguns problemas na fazenda, porém evitavam colocar o filho no meio dos assuntos. A maioria desses relatos eram sobre o celeiro, e que desconfiavam que alguem invadia-o. Contudo nenhum animal era machucado ou roubado.\n")
+		u.aguarde(500)
+		next()
+		
+		escreva_devagar("[NARRADOR]Os seus pais amavam muito a vida no campo e os animais que ali viviam, mas tinham um apego especial por uma vaca especifica, a mimosa. Sempre lhe alertavam para cuidar muito bem dela, e assim vocâ o fazia.\n")
+		u.aguarde(500)
+		next()
+
+		escreva_devagar("[NARRADOR] A sua vida deu uma reviravolta triste quando seus pais faleceram, deixando-o sozinho para cuidar da fazenda e dos animais.\n[NARRADOR] Essa perda devastadora te abalou profundamente .\n[NARRADOR] E com isso, você acabou percebendo que cuidar de uma fazenda sem a ajuda deles era muito mais complicado do que você imaginava...\n[NARRADOR] Havia percebido que precisava buscar a ajuda de alguém, porém não tinha certeza de quem confiar.\n")
 		next()
 		
 		escreva_devagar("							SUAS OPÇÕES ERAM: \n\n ✷Ou pedir ajuda a um amigo de seus falecidos pais, que pode vir a ser mais confiável do que um estranho. \n ✷Ou pedir a ajuda de seu vizinho de longa data, do qual costumava ir á sua casa para tomar café e conversar com você e sua família.\n\n\n")
