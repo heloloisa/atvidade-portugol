@@ -18,7 +18,7 @@ programa
     
     {
       
-        bemvindo()
+        emanuel()
        
         
     }
@@ -267,7 +267,7 @@ fim()
 					escreva(" 				 #   #         #   #  #      #   #  #      #   #          #  #  #      #      #   #    #    #   # \n")
 					escreva(" 				  ###          #   #  #####   ###   #####   ###          ####   #####  #       ###    ###    ###  \n")
                          next()   
-                         escreva_devagar("[NARRADOR] O vizinho relata ter encontrado algumas tábuas e cercas quebradas, como também diz ter visto um homem de roupas pretas saindo sorrateiramente durante a noite anterior.\n[NARRADOR] Isso já havia acontecido algumas vezes, como seus pais costimavam dizer\n")
+                         escreva_devagar("[NARRADOR] O vizinho relata ter encontrado algumas tábuas e cercas quebradas, como também diz ter visto um homem de roupas pretas saindo sorrateiramente durante a noite anterior.\n[NARRADOR] Isso já havia acontecido algumas vezes, como seus pais costumavam dizer\n")
                          next()
                          escreva_devagar("[NARRADOR] Entretanto quando você foi ver o cercado no qual a mimosa, sua vaca favorita, se encontrava, algo diferente havia acontecido\n[NARRADOR] Notastes que ela havia sido machucada, estava com alguns arranhões em suas costas e pernas.")
                          next()
@@ -331,11 +331,14 @@ fim()
 				next()
 				escreva_devagar("[NARRADOR] Com o tempo, Emanuel introduz a ideia de atrair investidores para a fazenda de seus pais.\n[NARRADOR] Ele alega que isso poderia trazer melhorias e prosperidade ao local, ja que as terras eram muito férteis\n[NARRADOR] Mas você permanece desacreditado disso, lembrando-se da simplicidade e dos valores que seus pais lhe ensinaram.")
 				next()
-				escreva_devagar("Emanuel, porém, revela que conseguiu potenciais investidores que estão dispostos a oferecer uma grande quantia de dinheiro em troca da fazenda.")
+				escreva_devagar("[NARRADOR]Emanuel, porém, revela que conseguiu potenciais investidores que estão dispostos a oferecer uma grande quantia de dinheiro em troca da fazenda.")
 				next()
-				escreva_devagar("[Emanuel] Ei, "+usuario+", queria conversar algumas coisinhas com você...\n["+usuario+"] Pode falar.\n[Emanuel] Então, recentemente você me chamou para te ajudar na fazenda\n[Emanuel] mas não irei ficar aqui para sempre[Emanuel] e com isso tive a ideia de anunciar a fazenda do seus pais para venda\n[Emanuel] porque isso te traria uma boa grana e você nao precisaria lidar com tudo isso sozinho\n[Emanuel] E hoje pela manhã recebi a proposta de incríveis 8 milhões de reais pela fazenda e queria saber sua opinião.\n["+usuario+"] O QUE?? VOCÊ ANUNCIOU A FAZENDA DOS MEUS PAIS SEM MINHA AUTORIZAÇÃO?\n["+usuario+"] EU TE CHAMEI AQUI PRA ME AJUDAR A CUIDAR DA FAZENDA, NÃO VENDÊ-LA")
-
-	
+				escreva_devagar("[Emanuel] Ei, "+usuario+", queria conversar algumas coisinhas com você...\n["+usuario+"] Pode falar.\n[Emanuel] Então, recentemente você me chamou para te ajudar na fazenda\n[Emanuel] mas não irei ficar aqui para sempre\n[Emanuel] e com isso tive a ideia de anunciar a fazenda do seus pais para venda\n[Emanuel] porque isso te traria uma boa grana e você nao precisaria lidar com tudo isso sozinho\n[Emanuel] E hoje pela manhã recebi a proposta de incríveis 8 milhões de reais pela fazenda e queria saber sua opinião.\n["+usuario+"] O QUE?? VOCÊ ANUNCIOU A FAZENDA DOS MEUS PAIS SEM MINHA AUTORIZAÇÃO?\n["+usuario+"] EU TE CHAMEI AQUI PRA ME AJUDAR A CUIDAR DA FAZENDA, NÃO VENDÊ-LA")
+				escreva_devagar("[Emanuel] Só que tem mais uma coisa... Eles também me ofereceram dinheiro pela sua vida. \n["+usuario+"]QUE?? COMO ASSIM?!\n[Emanuel]É isso mesmo. Mas você sabe que eu NUNCA faria isso, NÉ?! Você é como se fosse um irmão pra mim.\n["+usuario+"]É, sei sim.\n[Emanuel]Até mesmo porque se eu quisesse, eu nem mesmo teria te dito. \n")
+				escreva_devagar("[NARRADOR] Agora você tem uma nova informação. E com ela deverá fazer uma escolha, confiar ou não na palavra de Emanuel?\n")
+				
+				escreva("				ESCOLHA:\n\n\n")
+                    escreva_devagar("1 -- CONFIAR\n\n-----------------------------------\n\n2 -- NÃO CONFIAR\n\n-->")
       		}
       
    
