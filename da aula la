@@ -18,7 +18,7 @@ programa
     
     {
       
-        bemvindo()
+        emanuel()
        
         
     }
@@ -313,7 +313,7 @@ fim()
                          	}
       	}
       funcao emanuel(){
-      		se(opcao == 2){
+      
 				escreva_devagar("[NARRADOR] Você decidiu pedir ajuda de Emanuel, amigo de seus falecidos pais.\n[NARRADOR] Porque achou que ele era mais confiável, já que se recorda muito bem de seus pais falarem bastante com esse amigo.")
 				u.aguarde(1000)
 				next()
@@ -326,10 +326,19 @@ fim()
       			}
       				
       			escreva_devagar("[Emanuel] Alô? \n["+usuario+"]: Oi Emanuel, é o "+usuario+" desculpe ligar assim do nada mas, gostaria de te pedir um grande favor.\n[Emanuel] Ah sim, do que você precisa?\n["+usuario+"] Então, como você já deve estar sabendo... Meus pais faleceram recentemente. \n[EManuel] Nossa, sério?!?! Meu pêsames pela sua perda.\n["+usuario+"] Obrigado. Quando ainda vivos, eram eles que me ajudavam a cuidar da fazenda,\n["+usuario+"] e eu me recordo de você vindo aqui e nos ajudando em algumas coisas também. Gostaria de saber se você poderia me ajudar a cuidar da fazenda por alguns dias.\n["+usuario+"] Somente até que eu me acostume ao cotidiano da fazenda sem meus pais. \n[Emanuel] Eu te ajudo, mas só se você deixar algum quarto livre para que eu possa ultilizá-lo durante minah estadia. \n["+usuario+"] Feito! Obrigado.")
+				next()
+				escreva_devagar("[NARRADOR]Emanuel sugere morar com voce para que nao tenha que fazer uma viagem tao longa toda vez que tivesse que ir na sua fazenda.\n[NARRADOR] Você acaba cedendo e juntos, vocês mantêm a fazenda e cultivam a terra, seguindo os ensinamentos e tradições transmitidos pelos seus pais")
+				next()
+				escreva_devagar("[NARRADOR] Com o tempo, Emanuel introduz a ideia de atrair investidores para a fazenda de seus pais.\n[NARRADOR] Ele alega que isso poderia trazer melhorias e prosperidade ao local, ja que as terras eram muito férteis\n[NARRADOR] Mas você permanece desacreditado disso, lembrando-se da simplicidade e dos valores que seus pais lhe ensinaram.")
+				next()
+				escreva_devagar("Emanuel, porém, revela que conseguiu potenciais investidores que estão dispostos a oferecer uma grande quantia de dinheiro em troca da fazenda.")
+				next()
+				escreva_devagar("[Emanuel] Ei, "+usuario+", queria conversar algumas coisinhas com você...\n["+usuario+"] Pode falar.\n[Emanuel] Então, recentemente você me chamou para te ajudar na fazenda\n[Emanuel] mas não irei ficar aqui para sempre[Emanuel] e com isso tive a ideia de anunciar a fazenda do seus pais para venda\n[Emanuel] porque isso te traria uma boa grana e você nao precisaria lidar com tudo isso sozinho\n[Emanuel] E hoje pela manhã recebi a proposta de incríveis 8 milhões de reais pela fazenda e queria saber sua opinião.\n["+usuario+"] O QUE?? VOCÊ ANUNCIOU A FAZENDA DOS MEUS PAIS SEM MINHA AUTORIZAÇÃO?\n["+usuario+"] EU TE CHAMEI AQUI PRA ME AJUDAR A CUIDAR DA FAZENDA, NÃO VENDÊ-LA")
+
 	
       		}
       
-      }
+   
 
       funcao morte()
       
