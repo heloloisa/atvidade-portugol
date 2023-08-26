@@ -18,7 +18,7 @@ programa
     
     {
       
-        calvin()
+        bemvindo()
        
         
     }
@@ -147,7 +147,7 @@ programa
 		escreva(" *    ┛┗┗┛┗┛┗┛  ┗┛┗┛┗┛┗┛  ┗┛┛ ┗┻┛┛┗┛┗┗┛┛┗┛┗┛┗  ┗┛┛ ┗  ┗┛┛ ┗┛┗  ┗┛┗┛┛┗┛┗┛┗┻┛┛┗  ┛ ┗┻┗┛ ┻ ┻┗┛┛┗  ┗┛  ┗┛┛┗┗┛┻┛┗  ┻┛┗┛  ┛ ┗┻┗┛ ┻ ┗┛┛┗┻┗┛┗┛ \n")
         u.aguarde(5000)
         limpa()
-        
+        tabela()
     }
     
     funcao tabela(){                                                                                                                      
@@ -314,8 +314,9 @@ fim()
       	}
       funcao emanuel(){
       		se(opcao == 2){
-				escreva_devagar(" Você decidiu pedir ajuda de Emanuel, amigo de seus falecidos pais. Porque achou que ele era mais confiável, já que se recorda muito bem de seus pais falarem bastante com esse amigo.")
+				escreva_devagar("[NARRADOR] Você decidiu pedir ajuda de Emanuel, amigo de seus falecidos pais.\n[NARRADOR] Porque achou que ele era mais confiável, já que se recorda muito bem de seus pais falarem bastante com esse amigo.")
 				u.aguarde(1000)
+				next()
 				para(tempo=0;tempo<3;tempo++)
 				{
       				escreva("***TELEFONE TOCANDO***")
@@ -324,7 +325,7 @@ fim()
       				u.aguarde(300)
       			}
       				
-      			escreva_devagar("[Emanuel] Alô? \n["+usuario+"]: Oi Emanuel, é o "+usuario+" desculpe ligar assim do nada mas, gostaria de te pedir um grande favor.\n[Emanuel] Ah sim, do que você precisa?\n["+usuario+"] Então, como você já deve estar sabendo... Meus pais faleceram recentemente. \n[EManuel] Nossa, sério?!?! Meu pêsames pela sua perda.\n["+usuario+"] Obrigado. Quando ainda vivos, eram eles que me ajudavam a cuidar da fazenda, e eu me recordo de você vindo aqui e nos ajudando em algumas coisas também. Gostaria de saber se você poderia me ajudar a cuidar da fazenda por alguns dias. Somente até que eu me acostume ao cotidiano da fazenda sem meus pais. \n [Emanuel] Eu te ajudo, mas só se você deixar algum quarto livre para que eu possa ultilizá-lo durante minah estadia. \n ["+usuario+"] Feito! Obrigado.")
+      			escreva_devagar("[Emanuel] Alô? \n["+usuario+"]: Oi Emanuel, é o "+usuario+" desculpe ligar assim do nada mas, gostaria de te pedir um grande favor.\n[Emanuel] Ah sim, do que você precisa?\n["+usuario+"] Então, como você já deve estar sabendo... Meus pais faleceram recentemente. \n[EManuel] Nossa, sério?!?! Meu pêsames pela sua perda.\n["+usuario+"] Obrigado. Quando ainda vivos, eram eles que me ajudavam a cuidar da fazenda,\n["+usuario+"] e eu me recordo de você vindo aqui e nos ajudando em algumas coisas também. Gostaria de saber se você poderia me ajudar a cuidar da fazenda por alguns dias.\n["+usuario+"] Somente até que eu me acostume ao cotidiano da fazenda sem meus pais. \n[Emanuel] Eu te ajudo, mas só se você deixar algum quarto livre para que eu possa ultilizá-lo durante minah estadia. \n["+usuario+"] Feito! Obrigado.")
 	
       		}
       
