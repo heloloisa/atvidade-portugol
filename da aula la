@@ -13,6 +13,7 @@ programa
 	inteiro tempo
 	inteiro opcao2= 0
 	cadeia finalera
+	inteiro opcao3 = 0
     
     funcao inicio()
     
@@ -313,11 +314,22 @@ fim()
                          leia(opcao2)	 
                          next()
                          	se(opcao == 1){
-                         		escreva_devagar("[NARRADOR] Você decide concertar as tábuas do celeiro e, por desatenção, a mimosa acaba fugindo muito rapidamente.")
+                         		escreva_devagar("[NARRADOR] Você decidiu consertar as tábuas do celeiro com o objetivo de proteger os alimentos dos animais que lá estavam\n[NARRADOR]  Porém, enquanto você foi buscar tábuas novas para substituir as quebradas, a mimosa fugiu pela cerca que estava quebrada.")
                          		next()
-                         		escreva_devagar("[NARRADOR] Você deixou a mimosa fugir.")
+                         		escreva_devagar("[NARRADOR] Você ficou muito triste e preocupado com a mimosa, mas ficou confuso com a reação do Calvin, que ficou desesperado com o sumiço da vaca.\n[NARRADOR] Você o questiona do por que ele estava daquela forma, mas ele apenas te ignora e se retira em busca da vaca em disparada.")
+                         		
                          		next()
-                         		GAMEOVER()	                                                                  
+                         		escreva_devagar("Você segue Calvin em busca da vaca que fugiu, passaram horas e horas procurando ela, mas já havia anoitecido e nada.\n\n[NARRADOR]  Você propõe a ideia de irem dormir e amanhã voltarem a procura, mas Calvin ficou nervoso com a sua proposta e continuou sozinho.\n\nVocê foi para sua casa para tentar dormir, mas ficou se revirando na cama durante horas, com insônia e cabeça a mil")
+                         		u.aguarde(4000)
+                         		limpa()
+                         		escreva("						ESCOLHA\n\n\n1 -- IR ATRÁS DE CALVIN\n\n---------------------------------------\n\n2 -- TENTAR DORMIR\n\n--> ")
+                         		leia(opcao3)
+                         			se(opcao3 == 1)
+                         				escreva_devagar("[NARRADOR] Você não conseguiu dormir de forma alguma e decidiu ir atars de Calvin.")
+                         				next()
+                         				escreva_devagar("[NARRADOR] Porém, assim que você saiu de casa você ouviu um motor de carro tentando ser ligado várias vezes.\n\n[NARRADOR] Você olha ao redor e se depara com a Mimosa, mas havia um detalhe...")
+                                             next()
+                                             escreva_devagar("[NARRADOR] ELA ESTAVA NA HILUX DE CALVIN.\n\n[NARRADOR] Você automaticamente grita o nome dela")                  
                          	}
       	}
       funcao emanuel(){
