@@ -19,7 +19,7 @@ programa
     
     {
       
-      emanuel()
+      bemvindo()
         
  
         
@@ -519,7 +519,7 @@ fim()
 				next()
 				se(opcao2 == 1){
 					escreva("a")
-					//NAO ENTENDI COMO FAZER KKKKKK
+					//confiar no emanuel e vender a fazenda
 				}
                     se(opcao2 == 2){
                     	
