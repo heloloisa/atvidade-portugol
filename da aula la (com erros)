@@ -19,9 +19,31 @@ programa
     
     {
       
-        emanuel()
+        bemvindo()
        
         
+    }
+    funcao win(){
+escreva("##   ##   #####     ####   #######		\n")
+escreva("##   ##  ### ###   ##  ##   ##   #  	\n")
+escreva("##   ##  ##   ##  ##        ##      	\n")
+escreva(" ## ##   ##   ##  ##        ####    	\n")
+escreva(" ## ##   ##   ##  ##        ##     		\n")
+escreva("  ###    ### ###   ##  ##   ##   #  	\n")
+escreva("  ###     #####     ####   #######  	\n")
+escreva("                                    	\n")
+escreva(" #####     ###    ##   ##   ##  ##   #####   ##   ## \n")
+escreva("##   ##   ## ##   ###  ##   ##  ##  ### ###  ##   ##  \n")
+escreva("##       ##   ##  #### ##   ##  ##  ##   ##  ##   ##  \n")
+escreva("## ####  ##   ##  #######   ######  ##   ##  ##   ##  \n")
+escreva("##   ##  #######  ## ####   ##  ##  ##   ##  ##   ##  \n")
+escreva("##   ##  ##   ##  ##  ###   ##  ##  ### ###  ##   ##  \n")
+escreva(" #####   ##   ##  ##   ##   ##  ##   #####    #####   \n")
+u.aguarde(3000)
+fim()
+                                                      
+
+    		
     }
     funcao sorteiaEstado(){
 		inteiro estado1 = 0
@@ -174,12 +196,6 @@ programa
    		escreva("OBRIGADO POR JOGAR!\n\n\n by: Helo & Dan")
    		leia(finalera)
    		}
-     funcao fimTriste(){
-     	escreva_devagar("A MIMOSA MORREU...")	
-     	u.aguarde(2000)
-     	limpa()
-     	GAMEOVER()
-     }
      funcao GAMEOVER(){                                                                              
 escreva("  #####     ###    ##   ##  #######            #####   ### ###  #######  ######  \n")
 escreva(" ### ###   #####   ### ###  # ##              ### ###  ### ###  # ##     ### ### \n")
@@ -246,7 +262,7 @@ fim()
         	se (opcao == 1){
         	calvin()
         	}
-        	senao se (opcao == 2){
+        	se (opcao == 2){
         		emanuel()
         	}
         	
@@ -313,7 +329,7 @@ fim()
                          escreva_devagar("1 -- CONCERTAR AS TÁBUAS DO CELEIRO\n\n-----------------------------------\n\n2 -- CONCERTAR O CERCADO DA MIMOSA\n\n-->")	
                          leia(opcao2)	 
                          next()
-                         	se(opcao == 1){
+                         	se(opcao2 == 1){
                          		escreva_devagar("[NARRADOR] Você decidiu consertar as tábuas do celeiro com o objetivo de proteger os alimentos dos animais que lá estavam\n[NARRADOR]  Porém, enquanto você foi buscar tábuas novas para substituir as quebradas, a mimosa fugiu pela cerca que estava quebrada.")
                          		next()
                          		escreva_devagar("[NARRADOR] Você ficou muito triste e preocupado com a mimosa, mas ficou confuso com a reação do Calvin, que ficou desesperado com o sumiço da vaca.\n[NARRADOR] Você o questiona do por que ele estava daquela forma, mas ele apenas te ignora e se retira em busca da vaca em disparada.")
@@ -324,15 +340,151 @@ fim()
                          		limpa()
                          		escreva("						ESCOLHA\n\n\n1 -- IR ATRÁS DE CALVIN\n\n---------------------------------------\n\n2 -- TENTAR DORMIR\n\n--> ")
                          		leia(opcao3)
-                         			se(opcao3 == 1)
-                         				escreva_devagar("[NARRADOR] Você não conseguiu dormir de forma alguma e decidiu ir atars de Calvin.")
+                         			se(opcao3 == 1){
+                         				escreva_devagar("[NARRADOR] Você não conseguiu dormir de forma alguma e decidiu ir atras de Calvin.")
                          				next()
+                         				
+                         			}
+                         			se(opcao3 == 2){
+                         				escreva_devagar("[NARRADOR] Você consegue pegar no sono depois de algum tempo, mas acaba acordando pois teve pesadelos, e em todos eles Mimosa tinha um fim triste.")
+                         			}
                          				escreva_devagar("[NARRADOR] Porém, assim que você saiu de casa você ouviu um motor de carro tentando ser ligado várias vezes.\n\n[NARRADOR] Você olha ao redor e se depara com a Mimosa, mas havia um detalhe...")
                                              next()
-                                             escreva_devagar("[NARRADOR] ELA ESTAVA NA HILUX DE CALVIN.\n\n[NARRADOR] Você automaticamente grita o nome dela")                  
+                                             escreva_devagar("[NARRADOR] ELA ESTAVA NA HILUX DE CALVIN.\n\n[NARRADOR] Você automaticamente grita o nome dele indignado com o que estava acontecendo.\n\n[NARRADOR] Assim que Calvin te vê o semblante dele muda rapidamente e ele tenta ligar o carro cada vez mais rapido.\n\n[NARRADOR] Você tenta correr o mais rápido possivel, mas inútilmente, pois Calvin consegue liagr o carro e partir com a Mimosa.")
+                                             next()
+                                             escreva_devagar("[NARRADOR] Você vê Calvin indo embora com a Mimosa e entra em prantos e começa a se lembrar dos bons momentos que teve com ela.")                  
+                         			//imagem usuario na mimosa
+                         				next()
+                         				escreva_devagar("[NARRADOR] Enquanto você voltava pra casa chorando, vocÊ ouve um grande estrondo...\n\n[NARRADOR] Por causa da pressa, Calvin esqueceu de fechar a traseira da sua Hilux e Mimosa acabou caindo.\n\n[NARRADOR] Ao ouvir o barulho Calvin freia e desce do carro, mas Mimosa corre em direção à sua casa.\n\n[NARRADOR] Mimosa chega até você, mas infelizmente Calvin chegou junto.")
+                         				next()
+                         				escreva_devagar("[NARRADOR] O momento se torna tenso e aterrorizante quando Calvin puxa um revólver de sua calça.\n\n[NARRADOR] Você, completamente paralisado e sem experiência com armas, não sabe como reagir. Seu coração bate forte enquanto você encara a arma.\n\n[NARRADOR] Calvin olha diretamente nos seus olhos, com uma expressão de determinação sombria. Ele começa a falar, sua voz trêmula, mas carregada de ressentimento:")
+                         				next()
+                         				escreva_devagar("[CALVIN] Você não entende, "+usuario+" essa vaca, a Mimosa, é uma oportunidade única.\n[CALVIN] Ela carrega genes raros e valiosos que podem mudar a vida de quem a possui.\n[CALVIN] Os investidores estão dispostos a pagar uma fortuna por ela. Eu precisava dela, entende? Precisava do dinheiro para sair dessa vida simples e sem futuro!")
+									next()
+									escreva_devagar("[NARRADOR]Enquanto ele fala, você começa a perceber que Calvin está profundamente obcecado em suas próprias ambições e ganância.\n\n[NARRADOR]  Ele estava disposto a fazer qualquer coisa para conseguir o que queria, incluindo roubar a vaca que era tão importante para você.~znzn[NARRADOR]Você se encontra em uma situação terrível. Não tem experiência com armas, e Calvin parece determinado a usar a arma para garantir sua fuga com a vaca. ")
+									next()
+									escreva("Agora, você precisa tomar uma decisão rápida para enfrentar essa situação perigosa.")
+									u.aguarde(1000)
+									escreva("						ESCOLHA\n\n\n1 -- 1-Tentar acalmar Calvin e convencê-lo a desistir da vaca e da ideia de roubar você.\n\n--------------------------------------------------------------\n\n2 -- Tentar fugir e se esconder nas proximidades, esperando ajuda ou uma oportunidade de denunciá-lo às autoridades\n\n------------------------------------------------------------\n\n3 -- Tentar desarmar Calvin e evitar que ele faça algo\n\n --> ")
+									leia(opcao)
+									next()
+										se(opcao == 1){
+											escreva_devagar("["+usuario+"]C-Calvin, se acalme, nós podemos resolver isso de uma maneira pacífica...\n\n[CALVIN] VOCÊ NAO ENTENDE, ISSO É NECESSÁRIO.\n(Calvin puxa o gatilho de seu revólver)")
+											next()
+											escreva_devagar("[NARRADOR] Assim que Mimosa percebe o que Calvin estava prestes a fazer, tenta entrar na frente para te proteger.\n\n[NARRADOR] No susto, Calvin atira...")
+											next()
+											escreva_devagar("O tiro pegou em Mimosa...")
+											next()
+											escreva_devagar("[NARRADOR] Você entra em desespero e tenta segurar Mimosa enquanto ela se cai no chão.\n\n[NARRADOR] Mimosa, com uma bala alojada na picanha diz suas ultimas palavras...")
+											next()
+											escreva_devagar("[MIMOSA] Muuuuu……  u") 	
+											next()
+											u.aguarde(1000)
+											escreva_devagar("[NARRADOR] Extremamente bolado, você parte pra cima de Calvin\n\n\n["+usuario+"] AAAAAAAAAAAAAAAAAAAAAAAAA\n\n\nCALVIN PUXA O GATILHO E...")
+											u.aguarde(10000)
+											limpa()
+											escreva_devagar("POW\n\n\n[NARRADOR] Calvin acerta sua testa com um revóvler calibre 38, sem chance de vida")
+											morte()
+									
+										}
+										se(opcao == 2){
+											escreva_devagar("[NARRADOR] Assim que você tenta escapar de Calvin, ele puxa o gatilho e estoura seu crânio com uma bala")
+											morte()
+										}
+                         					se(opcao == 3){
+                         						escreva_devagar("[NARRADOR] Com coragem e determinação, você decide tentar desarmar Calvin.\n\n[NARRADOR] Você dá um passo à frente, mantendo os olhos fixos na arma que ele segura. Com movimentos cuidadosos, você tenta se aproximar lentamente dele.")
+                         						next()
+                         						escreva_devagar("[NARRADOR] Calvin parece surpreso com sua audácia, e seus olhos demonstram nervosismo.\n\n[NARRADOR] Ele mantém a arma apontada para você, mas à medida que você se aproxima, ele recua um pouco, tentando manter uma distância segura.")
+                         						next()
+                         						escreva_devagar("[NARRADOR] Você continua se aproximando, mantendo a calma, e no momento certo, você faz um movimento rápido, tentando desarmá-lo.\n\n[NARRADOR] Você consegue agarrar a arma, mas uma luta pelo controle se desencadeia.")
+                         						next()
+                         						escreva_devagar("[NARRADOR] Os dois lutam pela posse da arma, empurrando e puxando. Os segundos parecem intermináveis, e sua respiração fica pesada.\n\n[NARARDOR] Finalmente, com um esforço conjunto, você consegue desarmá-lo, e a arma cai no chão.")
+                         						next()
+                         						escreva_devagar("[NARRADOR] Calvin, derrotado e assustado, recua, e você pega a arma.\n\n[NARRADOR] Agora, você tem o controle da situação. Com a arma em mãos, você ordena que ele fique no chão e espere a chegada das autoridades.")
+                         						next()
+                         						win()
+                      					
                          	}
+                         	se(opcao2 == 2){
+                      		escreva_devagar("[NARRADOR] Você decide consertar o cercado da Mimosa, mas por estar euforica com a situação, antes que você termine, ela foge.\n\n[NARRADOR] Você rapidamente avisa o Calvin.")
+                         	next()
+                         		escreva_devagar("[NARRADOR] Você ficou muito triste e preocupado com a mimosa, mas ficou confuso com a reação do Calvin, que ficou desesperado com o sumiço da vaca.\n[NARRADOR] Você o questiona do por que ele estava daquela forma, mas ele apenas te ignora e se retira em busca da vaca em disparada.")
+                         		
+                         		next()
+                         		escreva_devagar("Você segue Calvin em busca da vaca que fugiu, passaram horas e horas procurando ela, mas já havia anoitecido e nada.\n\n[NARRADOR]  Você propõe a ideia de irem dormir e amanhã voltarem a procura, mas Calvin ficou nervoso com a sua proposta e continuou sozinho.\n\nVocê foi para sua casa para tentar dormir, mas ficou se revirando na cama durante horas, com insônia e cabeça a mil")
+                         		u.aguarde(4000)
+                         		limpa()
+                         		escreva("						ESCOLHA\n\n\n1 -- IR ATRÁS DE CALVIN\n\n---------------------------------------\n\n2 -- TENTAR DORMIR\n\n--> ")
+                         		leia(opcao3)
+                         			se(opcao3 == 1){
+                         				escreva_devagar("[NARRADOR] Você não conseguiu dormir de forma alguma e decidiu ir atras de Calvin.")
+                         				next()
+                         				
+                         			}
+                         			se(opcao3 == 2){
+                         				escreva_devagar("[NARRADOR] Você consegue pegar no sono depois de algum tempo, mas acaba acordando pois teve pesadelos, e em todos eles Mimosa tinha um fim triste.")
+                         			}
+                         				escreva_devagar("[NARRADOR] Porém, assim que você saiu de casa você ouviu um motor de carro tentando ser ligado várias vezes.\n\n[NARRADOR] Você olha ao redor e se depara com a Mimosa, mas havia um detalhe...")
+                                             next()
+                                             escreva_devagar("[NARRADOR] ELA ESTAVA NA HILUX DE CALVIN.\n\n[NARRADOR] Você automaticamente grita o nome dele indignado com o que estava acontecendo.\n\n[NARRADOR] Assim que Calvin te vê o semblante dele muda rapidamente e ele tenta ligar o carro cada vez mais rapido.\n\n[NARRADOR] Você tenta correr o mais rápido possivel, mas inútilmente, pois Calvin consegue liagr o carro e partir com a Mimosa.")
+                                             next()
+                                             escreva_devagar("[NARRADOR] Você vê Calvin indo embora com a Mimosa e entra em prantos e começa a se lembrar dos bons momentos que teve com ela.")                  
+                         			//imagem usuario na mimosa
+                         				next()
+                         				escreva_devagar("[NARRADOR] Enquanto você voltava pra casa chorando, vocÊ ouve um grande estrondo...\n\n[NARRADOR] Por causa da pressa, Calvin esqueceu de fechar a traseira da sua Hilux e Mimosa acabou caindo.\n\n[NARRADOR] Ao ouvir o barulho Calvin freia e desce do carro, mas Mimosa corre em direção à sua casa.\n\n[NARRADOR] Mimosa chega até você, mas infelizmente Calvin chegou junto.")
+                         				next()
+                         				escreva_devagar("[NARRADOR] O momento se torna tenso e aterrorizante quando Calvin puxa um revólver de sua calça.\n\n[NARRADOR] Você, completamente paralisado e sem experiência com armas, não sabe como reagir. Seu coração bate forte enquanto você encara a arma.\n\n[NARRADOR] Calvin olha diretamente nos seus olhos, com uma expressão de determinação sombria. Ele começa a falar, sua voz trêmula, mas carregada de ressentimento:")
+                         				next()
+                         				escreva_devagar("[CALVIN] Você não entende, "+usuario+" essa vaca, a Mimosa, é uma oportunidade única.\n[CALVIN] Ela carrega genes raros e valiosos que podem mudar a vida de quem a possui.\n[CALVIN] Os investidores estão dispostos a pagar uma fortuna por ela. Eu precisava dela, entende? Precisava do dinheiro para sair dessa vida simples e sem futuro!")
+									next()
+									escreva_devagar("[NARRADOR]Enquanto ele fala, você começa a perceber que Calvin está profundamente obcecado em suas próprias ambições e ganância.\n\n[NARRADOR]  Ele estava disposto a fazer qualquer coisa para conseguir o que queria, incluindo roubar a vaca que era tão importante para você.~znzn[NARRADOR]Você se encontra em uma situação terrível. Não tem experiência com armas, e Calvin parece determinado a usar a arma para garantir sua fuga com a vaca. ")
+									next()
+									escreva("Agora, você precisa tomar uma decisão rápida para enfrentar essa situação perigosa.")
+									u.aguarde(1000)
+									escreva("						ESCOLHA\n\n\n1 -- 1-Tentar acalmar Calvin e convencê-lo a desistir da vaca e da ideia de roubar você.\n\n--------------------------------------------------------------\n\n2 -- Tentar fugir e se esconder nas proximidades, esperando ajuda ou uma oportunidade de denunciá-lo às autoridades\n\n------------------------------------------------------------\n\n3 -- Tentar desarmar Calvin e evitar que ele faça algo\n\n --> ")
+									leia(opcao)
+									next()
+										se(opcao == 1){
+											escreva_devagar("["+usuario+"]C-Calvin, se acalme, nós podemos resolver isso de uma maneira pacífica...\n\n[CALVIN] VOCÊ NAO ENTENDE, ISSO É NECESSÁRIO.\n(Calvin puxa o gatilho de seu revólver)")
+											next()
+											escreva_devagar("[NARRADOR] Assim que Mimosa percebe o que Calvin estava prestes a fazer, tenta entrar na frente para te proteger.\n\n[NARRADOR] No susto, Calvin atira...")
+											next()
+											escreva_devagar("O tiro pegou em Mimosa...")
+											next()
+											escreva_devagar("[NARRADOR] Você entra em desespero e tenta segurar Mimosa enquanto ela se cai no chão.\n\n[NARRADOR] Mimosa, com uma bala alojada na picanha diz suas ultimas palavras...")
+											next()
+											escreva_devagar("[MIMOSA] Muuuuu……  u") 	
+											next()
+											u.aguarde(1000)
+											escreva_devagar("[NARRADOR] Extremamente bolado, você parte pra cima de Calvin\n\n\n["+usuario+"] AAAAAAAAAAAAAAAAAAAAAAAAA\n\n\nCALVIN PUXA O GATILHO E...")
+											u.aguarde(10000)
+											limpa()
+											escreva_devagar("POW\n\n\n[NARRADOR] Calvin acerta sua testa com um revóvler calibre 38, sem chance de vida")
+											morte()
+									
+										}
+										se(opcao == 2){
+											escreva_devagar("[NARRADOR] Assim que você tenta escapar de Calvin, ele puxa o gatilho e estoura seu crânio com uma bala")
+											morte()
+										}
+                         					se(opcao == 3){
+                         						escreva_devagar("[NARRADOR] Com coragem e determinação, você decide tentar desarmar Calvin.\n\n[NARRADOR] Você dá um passo à frente, mantendo os olhos fixos na arma que ele segura. Com movimentos cuidadosos, você tenta se aproximar lentamente dele.")
+                         						next()
+                         						escreva_devagar("[NARRADOR] Calvin parece surpreso com sua audácia, e seus olhos demonstram nervosismo.\n\n[NARRADOR] Ele mantém a arma apontada para você, mas à medida que você se aproxima, ele recua um pouco, tentando manter uma distância segura.")
+                         						next()
+                         						escreva_devagar("[NARRADOR] Você continua se aproximando, mantendo a calma, e no momento certo, você faz um movimento rápido, tentando desarmá-lo.\n\n[NARRADOR] Você consegue agarrar a arma, mas uma luta pelo controle se desencadeia.")
+                         						next()
+                         						escreva_devagar("[NARRADOR] Os dois lutam pela posse da arma, empurrando e puxando. Os segundos parecem intermináveis, e sua respiração fica pesada.\n\n[NARARDOR] Finalmente, com um esforço conjunto, você consegue desarmá-lo, e a arma cai no chão.")
+                         						next()
+                         						escreva_devagar("[NARRADOR] Calvin, derrotado e assustado, recua, e você pega a arma.\n\n[NARRADOR] Agora, você tem o controle da situação. Com a arma em mãos, você ordena que ele fique no chão e espere a chegada das autoridades.")
+                         						next()
+                         						win()
+                         	
+                         	}
+                         			
       	}
-      funcao emanuel(){
+                         	
+			funcao emanuel(){
       
 				escreva_devagar("[NARRADOR] Você decidiu pedir ajuda de Emanuel, amigo de seus falecidos pais.\n[NARRADOR] Porque achou que ele era mais confiável, já que se recorda muito bem de seus pais falarem bastante com esse amigo.")
 				u.aguarde(1000)
@@ -353,19 +505,56 @@ fim()
 				next()
 				escreva_devagar("[NARRADOR]Emanuel, porém, revela que conseguiu potenciais investidores que estão dispostos a oferecer uma grande quantia de dinheiro em troca da fazenda.")
 				next()
-				escreva_devagar("[Emanuel] Ei, "+usuario+", queria conversar algumas coisinhas com você...\n["+usuario+"] Pode falar.\n[Emanuel] Então, recentemente você me chamou para te ajudar na fazenda\n[Emanuel] mas não irei ficar aqui para sempre\n[Emanuel] e com isso tive a ideia de anunciar a fazenda do seus pais para venda\n[Emanuel] porque isso te traria uma boa grana e você nao precisaria lidar com tudo isso sozinho\n[Emanuel] E hoje pela manhã recebi a proposta de incríveis 8 milhões de reais pela fazenda e queria saber sua opinião.\n["+usuario+"] O QUE?? VOCÊ ANUNCIOU A FAZENDA DOS MEUS PAIS SEM MINHA AUTORIZAÇÃO?\n["+usuario+"] EU TE CHAMEI AQUI PRA ME AJUDAR A CUIDAR DA FAZENDA, NÃO VENDÊ-LA")
+				escreva_devagar("[Emanuel] Ei, "+usuario+",queria conversar algumas coisinhas com você...\n["+usuario+"] Pode falar.\n[Emanuel] Então, recentemente você me chamou para te ajudar na fazenda\n[Emanuel] mas não irei ficar aqui para sempre\n[Emanuel] e com isso tive a ideia de anunciar a fazenda do seus pais para venda\n[Emanuel] porque isso te traria uma boa grana e você nao precisaria lidar com tudo isso sozinho\n[Emanuel] E hoje pela manhã recebi a proposta de incríveis 8 milhões de reais pela fazenda e queria saber sua opinião.\n["+usuario+"] O QUE?? VOCÊ ANUNCIOU A FAZENDA DOS MEUS PAIS SEM MINHA AUTORIZAÇÃO?\n["+usuario+"] EU TE CHAMEI AQUI PRA ME AJUDAR A CUIDAR DA FAZENDA, NÃO VENDÊ-LA")
 				escreva_devagar("[Emanuel] Só que tem mais uma coisa... Eles também me ofereceram dinheiro pela sua vida. \n["+usuario+"]QUE?? COMO ASSIM?!\n[Emanuel]É isso mesmo. Mas você sabe que eu NUNCA faria isso, NÉ?! Você é como se fosse um irmão pra mim.\n["+usuario+"]É, sei sim.\n[Emanuel]Até mesmo porque se eu quisesse, eu nem mesmo teria te dito. \n")
 				escreva_devagar("[NARRADOR] Agora você tem uma nova informação. E com ela deverá fazer uma escolha, confiar ou não na palavra de Emanuel?\n")
 				
 				escreva("				ESCOLHA:\n\n\n")
-                    escreva_devagar("1 -- CONFIAR\n\n-----------------------------------\n\n2 -- NÃO CONFIAR\n\n-->")
+                    escreva_devagar("1 -- CONFIAR\n\n-----------------------------------\n\n2 -- NÃO CONFIAR\n\n--> ")
+				leia(opcao2)
+				next()
+				se(opcao2 == 1){
+					escreva("a")
+					//NAO ENTENDI COMO FAZER KKKKKK
+				}
+                    se(opcao2 == 2){
+                    	
+                    	escreva_devagar("[NARRADOR]Você não confia nele, porém pretende que sim, e pelas costas de Emanuel você começa a vasculhar o quarto no qual ele estava hospedado em busca de pistas de sua trama.\n\n[NARRADOR] Você achou algo que supostamente não deveria ter encontrado, cheques de pagamento do dia 14/08/2048, um dia após o falecimento de seus pais.\n\n[NARRADOR]  Você ficou confuso, começou a desconfiar que talvez Emanuel estivesse envolvido com a morte de seus pais.")
+                    	u.aguarde(7000)
+                    	cheque()
+                    	next()
+                    	escreva_devagar("[NARRADOR] Você decide investigar mais afundo, pega o notebook de Emanuel.\n\n[NARRADOR]  o liga e entra em site da dark web no qual ele estava logado, provavelmente por algum descuido, abre um chat recente e então lê as seguintes mensagens")
+                    	next()
+                    	
+			escreva("________________\n")
+			escreva("|| @#()*&     ||\n")
+			escreva("||      %#%#$ ||\n")
+			escreva("|| #$*&(*%    ||\n")
+			escreva("||         %* ||\n")
+			escreva("||____________||\n")
+			escreva("|______________|\n")
+			escreva(" \\############\\\n")
+			escreva("  \\############\\\n")
+			escreva("   |      ____    \\n") 
+			escreva("    |_____|___|____\\n")
+				escreva_devagar("Emanuel87: A operação está em andamento. Tudo pronto para a próxima fase.\n\n")
+				escreva_devagar("MisteriosoPerigoso: Ótimo. Lembre-se, após a conclusão, você receberá o pagamento total. Ninguém vai descobrir.\n\n")
+				escreva_devagar("Emanuel87: Não se preocupe. "+usuario+" não tem ideia do que está por vir. A fazenda logo estará sob nosso controle.\n\n")
+				escreva_devagar("MisteriosoPerigoso: Excelente. Certifique-se de que não haja rastros, que nem da última vez. Estaremos observando.\n\n\n")
+				escreva_devagar("[NARRADOR] Você entrou em choque, por mais que já sabia que haviam oferecido dinheiro pela sua vida, agora era certeiro.\n\n[NARRADOR] As provas estavam na sua frente, e você nao sabia como reagir.\n\n[NARRADOR] Por mais que já estivesse muito espantado e com uma explosão de emoções, ficou extremamente confuso com a frase “que nem da ultima vez”.\n\n[NARRADOR] Então decide subir ainda mais as mensagens, que são de muito tempo atrás\n\n[NARARDOR]  para ser mais exato, 12/08/2048, um dia antes da morte de seus pais, e dois dias antes do cheque pagamento.\n\n[NARRADOR] Os pontos se ligaram e enfim você descobre quem matou os seus pais...")
+				next()
+				escreva_devagar("Você liga para as autoridades e diz que está em sérios perigos, eles chegam na sua casa e pegam o Emanuel desprevenido.\n\n Você apresenta as provas e ele é apreendido.\n\n\n[NARRADOR]Com um leve sorriso sarcastico no rosto emanuel diz enquanto é algemado:")
+				escreva("[EMANUEL]")
+				escreva_devagar(" Você pagará caro....")
+				win()
+                    }
       		}
+                         	
       
-   
 
-      funcao morte()
+      funcao morte(){
       
-  {       escreva("				 .   \n")
+          escreva("				 .   \n")
     		escreva("	               ... \n")
 		escreva("	             ;::::;\n")
 		escreva("	           ;::::; :;\n")
@@ -429,7 +618,7 @@ fim()
 	{ //uma espécie de "escreva()" porém pausadamente. 
 							
 		caracter letra
-		inteiro velocidade = 1 //pausa padrão entre um caracter e outro.
+		inteiro velocidade = 75 //pausa padrão entre um caracter e outro.
 		
 		para(inteiro i = 0 ; i < tx.numero_caracteres(texto) ; i++){ //repete enquanto a frase inteiro não for escrita.
 
