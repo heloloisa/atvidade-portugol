@@ -2,10 +2,7 @@ programa
 {
 	inclua biblioteca Tipos --> t
 	inclua biblioteca Texto --> tx
-    
-    
-    inclua biblioteca Graficos--> g
-    inclua biblioteca Util--> u
+   	inclua biblioteca Util--> u
     
      cadeia usuario
 	inteiro opcao = 0
