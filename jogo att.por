@@ -2,10 +2,7 @@ programa
 {
 	inclua biblioteca Tipos --> t
 	inclua biblioteca Texto --> tx
-    
-    
-    inclua biblioteca Graficos--> g
-    inclua biblioteca Util--> u
+     inclua biblioteca Util--> u
     
      cadeia usuario
 	inteiro opcao = 0
@@ -19,7 +16,6 @@ programa
 
     {
 
-      emanuel()
       bemvindo()
 
 
@@ -211,38 +207,34 @@ fim()
     		sorteiaEstado()
 		u.aguarde(1000)
 		escreva("				CONTEXTO\n\n")
-		escreva_devagar("[NARRADOR]"+usuario+" era um camponês humilde, do interior do "+estado+" que não tinha muitas esperanças para o futuro. \n No sítio onde você vivia não havia escolas nas redondezas, logo você não tinha amigos, e nem estudo. \n") 
+		escreva_devagar("[NARRADOR] "+usuario+" era um camponês humilde, do interior do "+estado+" que não tinha muitas esperanças para o futuro. \n[NARRADOR] No sítio onde você vivia não havia escolas nas redondezas, logo você não tinha amigos, e nem estudo. \n") 
 		u.aguarde(500)
 		next()
 		
-		escreva_devagar("[NARRADOR] Desde pequeno sua única companhia eram os animais da fazenda e seus pais. \n ")
+		escreva_devagar("[NARRADOR] Desde pequeno sua única companhia eram os animais da fazenda e seus pais. \n")
 		 u.aguarde(500)
-		 next()
-		 
 		escreva_devagar("[NARRADOR] Então quando você não estava carpindo ou trabalhando na lavoura, você estava passando o tempo com eles. \n")
 		u.aguarde(500)
-		next()
-		
 		escreva_devagar("[NARRADOR] Seus dias começavam cedo, com o canto dos galos anunciando a alvorada")
-		u.aguarde(800)
+		u.aguarde(500)
 		escreva(".")
-		u.aguarde(800)
+		u.aguarde(500)
 		escreva(".")
-		u.aguarde(800)
+		u.aguarde(500)
 		escreva(". \n")
 		next()
 		
 		escreva_devagar("[NARRADOR] Você ajudava seus pais a cuidar dos animais e a cultivar a terra.\n[NARRADOR] Aprendera com seu pai a arte da agricultura e com sua mãe, os segredos da culinária tradicional da região\n"+"[NARRADOR] À noite, a família se reunia ao redor da fogueira para contar histórias e cantar canções antigas.\n")
 		u.aguarde(500)
 		next()
-		escreva_devagar("[NARRADOR]Algumas vezes seus pais relatavam alguns problemas na fazenda, porém evitavam colocar o filho no meio dos assuntos.\n\n[NARRADOR] A maioria desses relatos eram sobre o celeiro, e que desconfiavam que alguem invadia-o. Contudo nenhum animal era machucado ou roubado.\n")
+		escreva_devagar("[NARRADOR] Algumas vezes seus pais relatavam alguns problemas na fazenda, porém evitavam colocar o filho no meio dos assuntos.\n[NARRADOR] A maioria desses relatos eram sobre o celeiro, e que desconfiavam que alguem invadia-o. Contudo nenhum animal era machucado ou roubado.\n")
 		u.aguarde(500)
 		next()
 		
-		escreva_devagar("[NARRADOR]Os seus pais amavam muito a vida no campo e os animais que ali viviam, mas tinham um apego especial por uma vaca especifica, a mimosa.\n\n")
+		escreva_devagar("[NARRADOR] Os seus pais amavam muito a vida no campo e os animais que ali viviam, mas tinham um apego especial por uma vaca especifica, a mimosa.\n\n")
 		mimosa()
 		u.aguarde(500)
-		escreva_devagar("[NARRADOR]Sempre lhe alertavam para cuidar muito bem dela, e assim vocâ o fazia.\n")
+		escreva_devagar("[NARRADOR] Sempre lhe alertavam para cuidar muito bem dela, e assim vocâ o fazia.\n")
 		
 		next()
 		
@@ -281,7 +273,7 @@ fim()
       funcao calvin(){
       		escreva_devagar("[NARRADOR] Você decidiu pedir ajuda a seu vizinho, Calvin, que já era um homem experiente em cuidar de lavouras.\n[NARRADOR] Escolheu pedir ajuda a ele principalmente por conta da distância.\n[NARRADOR] Porque achou que seria melhor e mais prático pedir ajuda a alguém que mora a menos de um quarteirão de distância de sua moradia. Decida como você vai se comunicar com ele.\n\n\n")		 
 
-      		escreva("							ESCOLHA\n")
+      		escreva("							ESCOLHA\n\n")
       		escreva("1 -- LIGAR PARA O VIZINHO COM O TELEFONE ANTIGO DE SEUS PAIS\n")
       		escreva("------------------------------------------------------\n")
       		escreva("2 -- IR ANDANDO ATÉ A CASA DE CALVIN\n")
@@ -296,9 +288,9 @@ fim()
       				limpa()
       				u.aguarde(300)}
       				u.aguarde(2000)
-      				escreva_devagar("[CALVIN] a-alo!?\n\n["+usuario+"] Olá Calvin, Boa tarde!\n\n[CALVIN] Boa tarde...com quem eu falo?\n\n["+usuario+"] Me chamo "+usuario+", sou filho dos seus ex-vizinhos, e vim aqui te pedi um favor...\n\n[CALVIN] E qual seria esse favor?\n\n["+usuario+"] Com o falecimento dos meus pais tenho tido bastante dificuldade em manter a fazenda\n\n, e como meus pais falavam muito bem de você, imaginei que o senhor poderia me ajudar por um tempo, até eu pegar o jeito.\n\n\n[NARRADOR] Calvin ficou em silêncio\n\n\n["+usuario+"] Calvin???\n\n[CALVIN] C-Claro que aceito "+usuario+"!!\n\n["+usuario+"] QUE ALÍVIO! MUITO OBRIGADO CALVIN!\n\n[CALVIN] Por nada, assim que possível vou ir na sua casa ver a situação. " )}
+      				escreva_devagar("[CALVIN] a-alo!?\n\n["+usuario+"] Olá Calvin, Boa tarde!\n\n[CALVIN] Boa tarde...com quem eu falo?\n\n["+usuario+"] Me chamo "+usuario+", sou filho dos seus ex-vizinhos, e vim aqui te pedi um favor...\n\n[CALVIN] E qual seria esse favor?\n\n["+usuario+"] Com o falecimento dos meus pais tenho tido bastante dificuldade em manter a fazenda\n\n["+usuario+"] E como meus pais falavam muito bem de você, imaginei que o senhor poderia me ajudar por um tempo, até eu pegar o jeito.\n*\n*\n[NARRADOR] Calvin ficou em silêncio\n*\n*\n["+usuario+"] Calvin???\n\n[CALVIN] C-Claro que aceito "+usuario+"!!\n\n["+usuario+"] QUE ALÍVIO! MUITO OBRIGADO CALVIN!\n\n[CALVIN] Por nada, assim que possível vou ir na sua casa ver a situação. " )}
       			senao se (opcao == 2){
-      			escreva_devagar("[NARRADOR] Você decidiu ir até a casa de calvin, mas assim que saiu para fora de casa percebeu que estava prestes a chover.\nPara evitar se sujar vc decide tentar falar com ele de outra forma, então você liga para ele.")
+      			escreva_devagar("[NARRADOR] Você decidiu ir até a casa de calvin, mas assim que saiu para fora de casa percebeu que estava prestes a chover.\n[NARRADOR] Para evitar se sujar vc decide tentar falar com ele de outra forma, então você liga para ele.")
       			next()
       			para(tempo=0;tempo<3;tempo++){
       				escreva("***TELEFONE TOCANDO***")
@@ -306,11 +298,11 @@ fim()
       				limpa()
       				u.aguarde(300)}
       				u.aguarde(2000)
-      				escreva_devagar("[CALVIN] a-alo!?\n\n["+usuario+"] Olá Calvin, Boa tarde!\n\n[CALVIN] Boa tarde...com quem eu falo?\n\n["+usuario+"] Me chamo "+usuario+", sou filho dos seus ex-vizinhos, e vim aqui te pedi um favor...\n\n[CALVIN] E qual seria esse favor?\n\n["+usuario+"] Com o falecimento dos meus pais tenho tido bastante dificuldade em manter a fazenda\n\n, e como meus pais falavam muito bem de você, imaginei que o senhor poderia me ajudar por um tempo, até eu pegar o jeito.\n\n\n[NARRADOR] Calvin ficou em silêncio\n\n\n["+usuario+"] Calvin???\n\n[CALVIN] C-Claro que aceito "+usuario+"!!\n\n["+usuario+"] QUE ALÍVIO! MUITO OBRIGADO CALVIN!\n\n[CALVIN] Por nada, assim que possível vou ir na sua casa ver a situação. " )}
+      				escreva_devagar("[CALVIN] a-alo!?\n\n["+usuario+"] Olá Calvin, Boa tarde!\n\n[CALVIN] Boa tarde...com quem eu falo?\n\n["+usuario+"] Me chamo "+usuario+", sou filho dos seus ex-vizinhos, e vim aqui te pedi um favor...\n\n[CALVIN] E qual seria esse favor?\n\n["+usuario+"] Com o falecimento dos meus pais tenho tido bastante dificuldade em manter a fazenda\n\n["+usuario+"] E como meus pais falavam muito bem de você, imaginei que o senhor poderia me ajudar por um tempo, até eu pegar o jeito.\n*\n*\n[NARRADOR] Calvin ficou em silêncio\n*\n*\n["+usuario+"] Calvin???\n\n[CALVIN] C-Claro que aceito "+usuario+"!!\n\n["+usuario+"] QUE ALÍVIO! MUITO OBRIGADO CALVIN!\n\n[CALVIN] Por nada, assim que possível vou ir na sua casa ver a situação. " )}
       			
       			next()
       				
-					escreva_devagar("[NARRADOR] Você acredita que vai ser bom dar um voto de confiança em seu vizinho de longa data.\n[NARRADOR] Pede ao vizinho que o ajude a cuidar da fazenda e dos animais e do celeiro, acreditando que ele é a pessoa certa para essa tarefa por ter passado toda sua vida no campo, como você.\n[NARRADOR] Conforme o tempo passa vocês vão se tornando mais que amigos.")
+					escreva_devagar("[NARRADOR] Você acredita que vai ser bom dar um voto de confiança em seu vizinho de longa data.\n[NARRADOR] Pede ao vizinho que o ajude a cuidar da fazenda e dos animais e do celeiro\n[NARRADOR] Acreditando que ele é a pessoa certa para essa tarefa por ter passado toda sua vida no campo, como você.\n[NARRADOR] Conforme o tempo passa vocês vão se tornando mais que amigos.")
 					next()
 					escreva_devagar("Se tornam friends.")
 					next()
@@ -323,12 +315,12 @@ fim()
 					escreva(" 				 #   #         #   #  #      #   #  #      #   #          #  #  #      #      #   #    #    #   # \n")
 					escreva(" 				  ###          #   #  #####   ###   #####   ###          ####   #####  #       ###    ###    ###  \n")
                          next()   
-                         escreva_devagar("[NARRADOR] Depois de três meses desde ter pedido ao seu vizinho para te ajudar na fazenda, ele relata ter encontrado algumas tábuas e cercas quebradas, como também diz ter visto um homem de roupas pretas saindo sorrateiramente durante a noite anterior.\n[NARRADOR] Isso já havia acontecido algumas vezes como seus pais costumavam dizer, por isso você nao desconfiou de Calvin, apenas ficou apreensivo.\n")
+                         escreva_devagar("[NARRADOR] Depois de três meses desde ter pedido ao seu vizinho para te ajudar na fazenda, ele relata ter encontrado algumas tábuas e cercas quebradas\n[NARRADOR] Como também diz ter visto um homem de roupas pretas saindo sorrateiramente durante a noite anterior.\n[NARRADOR] Isso já havia acontecido algumas vezes como seus pais costumavam dizer, por isso você nao desconfiou de Calvin, apenas ficou apreensivo.\n")
                          next()
-                         escreva_devagar("[NARRADOR] Você foi conferir o estado dos seus animais para se certificar de que estava tudo bem. E quando foi ver o cercado no qual a mimosa, sua vaca favorita, se encontrava, algo estava diferente. \n[NARRADOR] Notou que ela havia sido machucada, estava com alguns arranhões em suas costas e pernas. Agora você precisa tomar uma decisão\n.")
+                         escreva_devagar("[NARRADOR] Você foi conferir o estado dos seus animais para se certificar de que estava tudo bem.\n[NARRADOR] E quando foi ver o cercado no qual a mimosa, sua vaca favorita, se encontrava, algo estava diferente. \n[NARRADOR] Notou que ela havia sido machucada, estava com alguns arranhões em suas costas e pernas. Agora você precisa tomar uma decisão")
                          next()
                          escreva_devagar("					ESCOLHA:\n\n\n")
-                         escreva("1 -- FAZER UMA RECEITA ANTIGA QUE SEUS PAIS ENSINARAM PARA FERIDAS EM ANIMAIS\n\n-------------------------------\n\n2 -- GRITAR PELO CALVIN POR AJUDA\n\n-------------------------------\n\n3 -- NÃO FAZER NADA\n-->")
+                         escreva("1 -- FAZER UMA RECEITA ANTIGA QUE SEUS PAIS ENSINARAM PARA FERIDAS EM ANIMAIS\n\n-------------------------------\n\n2 -- GRITAR PELO CALVIN POR AJUDA\n\n-------------------------------\n\n3 -- NÃO FAZER NADA\n--> ")
                          leia(opcao2)
                          	se (opcao2 == 1){
                          		escreva_devagar("[NARRADOR] Você faz uma receita a base de cannabis e aplicou na ferida de mimosa e ela ficou bem.")
@@ -357,16 +349,16 @@ fim()
                          escreva_devagar("[NARRADOR] Depois disso você decide consertar o local que tinha sido danificado")
                          next()
                          escreva("				ESCOLHA:\n\n\n")
-                         escreva_devagar("1 -- CONSERTAR AS TÁBUAS DO CELEIRO\n\n-----------------------------------\n\n2 -- CONSERTAR O CERCADO DA MIMOSA\n\n-->")	
+                         escreva_devagar("1 -- CONSERTAR AS TÁBUAS DO CELEIRO\n\n-----------------------------------\n\n2 -- CONSERTAR O CERCADO DA MIMOSA\n\n--> ")	
                          leia(opcao2)	 
                          next()
                          	se(opcao2 == 1){
-                         		escreva_devagar("[NARRADOR] Você decidiu consertar as tábuas do celeiro com o objetivo de proteger os alimentos dos animais que lá estavam\n[NARRADOR]  Porém, enquanto você foi buscar tábuas novas para substituir as quebradas, a mimosa fugiu pela cerca que estava quebrada.")
+                         		escreva_devagar("[NARRADOR] Você decidiu consertar as tábuas do celeiro com o objetivo de proteger os alimentos dos animais que lá estavam\n[NARRADOR] Porém, enquanto você foi buscar tábuas novas para substituir as quebradas, a mimosa fugiu pela cerca que estava quebrada.")
                          		next()
                          		escreva_devagar("[NARRADOR] Você ficou muito triste e preocupado com a mimosa, mas ficou confuso com a reação do Calvin, que ficou desesperado com o sumiço da vaca.\n[NARRADOR] Você o questiona do por que ele estava daquela forma, mas ele apenas te ignora e se retira em busca da vaca em disparada.")
                          		
                          		next()
-                         		escreva_devagar("[narrador] Você segue Calvin em busca da vaca que fugiu, passaram horas e horas procurando ela, mas já havia anoitecido e nada.\n\n[NARRADOR]  Você propõe a ideia de irem dormir e amanhã voltarem a procura, mas Calvin ficou nervoso com a sua proposta e continuou sozinho.\n\n[NARRADOR] Você foi para sua casa para tentar dormir, mas ficou se revirando na cama durante horas, com insônia e cabeça a mil.")
+                         		escreva_devagar("[NARRADOR] Você segue Calvin em busca da vaca que fugiu, passaram horas e horas procurando ela, mas já havia anoitecido e nada.\n\n[NARRADOR] Você propõe a ideia de irem dormir e amanhã voltarem a procura, mas Calvin ficou nervoso com a sua proposta e continuou sozinho.\n\n[NARRADOR] Você foi para sua casa para tentar dormir, mas ficou se revirando na cama durante horas, com insônia e cabeça a mil.")
                          		u.aguarde(4000)
                          		limpa()
                          		escreva("						ESCOLHA\n\n\n1 -- IR ATRÁS DE CALVIN\n\n---------------------------------------\n\n2 -- TENTAR DORMIR\n\n--> ")
@@ -392,9 +384,9 @@ fim()
                          				next()
                          				escreva_devagar("[CALVIN] Você não entende, "+usuario+" essa vaca, a Mimosa, é uma oportunidade única.\n[CALVIN] Ela carrega genes raros e valiosos que podem mudar a vida de quem a possui.\n[CALVIN] Os investidores estão dispostos a pagar uma fortuna por ela. Eu precisava dela, entende? Precisava do dinheiro para sair dessa vida simples e sem futuro!")
 									next()
-									escreva_devagar("[NARRADOR]Enquanto ele fala, você começa a perceber que Calvin está profundamente obcecado em suas próprias ambições e ganância.\n\n[NARRADOR] Ele estava disposto a fazer qualquer coisa para conseguir o que queria, incluindo roubar a vaca que era tão importante para você.\n\n[NARRADOR]Você se encontra em uma situação terrível. Não tem experiência com armas, e Calvin parece determinado a usar a arma para garantir sua fuga com a vaca. ")
+									escreva_devagar("[NARRADOR] Enquanto ele fala, você começa a perceber que Calvin está profundamente obcecado em suas próprias ambições e ganância.\n\n[NARRADOR] Ele estava disposto a fazer qualquer coisa para conseguir o que queria, incluindo roubar a vaca que era tão importante para você.\n\n[NARRADOR] Você se encontra em uma situação terrível. Não tem experiência com armas, e Calvin parece determinado a usar a arma para garantir sua fuga com a vaca. ")
 									next()
-									escreva("Agora, você precisa tomar uma decisão rápida para enfrentar essa situação perigosa.")
+									escreva("Agora, você precisa tomar uma decisão rápida para enfrentar essa situação perigosa.\n\n")
 									u.aguarde(1000)
 									escreva("						ESCOLHA\n\n\n1 -- 1-Tentar acalmar Calvin e convencê-lo a desistir da vaca e da ideia de roubar você.\n\n--------------------------------------------------------------\n\n2 -- Tentar fugir e se esconder nas proximidades, esperando ajuda ou uma oportunidade de denunciá-lo às autoridades\n\n------------------------------------------------------------\n\n3 -- Tentar desarmar Calvin e evitar que ele faça algo\n\n --> ")
 									leia(opcao)
@@ -538,7 +530,7 @@ fim()
 				next()
 				escreva_devagar("[NARRADOR] Com o tempo, Emanuel introduz a ideia de atrair investidores para a fazenda de seus pais.\n[NARRADOR] Ele alega que isso poderia trazer melhorias e prosperidade ao local, ja que as terras eram muito férteis\n\n[NARRADOR] Mas você permanece desacreditado disso, lembrando-se da simplicidade e dos valores que seus pais lhe ensinaram.")
 				next()
-				escreva_devagar("[NARRADOR]Emanuel, porém, revela que conseguiu potenciais investidores que estão dispostos a oferecer uma grande quantia de dinheiro em troca da fazenda.")
+				escreva_devagar("[NARRADOR] Emanuel, porém, revela que conseguiu potenciais investidores que estão dispostos a oferecer uma grande quantia de dinheiro em troca da fazenda.")
 				next()
 				escreva_devagar("[Emanuel] Ei, "+usuario+",queria conversar algumas coisinhas com você...\n\n["+usuario+"] Pode falar.\n\n[Emanuel] Então, recentemente você me chamou para te ajudar na fazenda\n\n[Emanuel] mas não irei ficar aqui para sempre\n\n[Emanuel] e com isso tive a ideia de anunciar a fazenda do seus pais para venda\n\n[Emanuel] porque isso te traria uma boa grana e você nao precisaria lidar com tudo isso sozinho\n\n[Emanuel] E hoje pela manhã recebi a proposta de incríveis 8 milhões de reais pela fazenda e queria saber sua opinião.\n\n["+usuario+"] O QUE?? VOCÊ ANUNCIOU A FAZENDA DOS MEUS PAIS SEM MINHA AUTORIZAÇÃO?\n\n["+usuario+"] EU TE CHAMEI AQUI PRA ME AJUDAR A CUIDAR DA FAZENDA, NÃO VENDÊ-LA\n\n")
 				escreva_devagar("[Emanuel] Só que tem mais uma coisa... Eles também me ofereceram dinheiro pela sua vida. \n\n["+usuario+"] QUE?? COMO ASSIM?!\n\n[Emanuel] É isso mesmo. Mas você sabe que eu NUNCA faria isso, NÉ?! Você é como se fosse um irmão pra mim.\n\n["+usuario+"] É, sei sim.\n\n[Emanuel]Até mesmo porque se eu quisesse, eu nem mesmo teria te dito. \n\n")
@@ -549,8 +541,8 @@ fim()
 				leia(opcao2)
 				next()
 				se(opcao2 == 1){
-					escreva_devagar("[NARRADOR] Você decide confiar em Emanuel, e fazendo isso aceitou a proposta de vender as terras. Emanuel disse que cuidaria da parte de assinar papéis e fazer a transação de dinheiro, e você aceitou receosamente.\n[NARRADOR] Quando se deu conta do que havia feitou, tentou voltar atrás, porém já era era tarde, suas terras já estavam vendidas, e o dinheiro em vez de ir para você, foi para a conta de Emanuel.\n[NARRADOR]Desolado, enquanto ia para seu quarto, ficou tudo escuro, te deram um apagão. \n\n			Emanuel te matou.\n\n")
-					u.aguarde(4000)
+					escreva_devagar("[NARRADOR] Você decide confiar em Emanuel, e fazendo isso aceitou a proposta de vender as terras.\n[NARRADOR] Emanuel disse que cuidaria da parte de assinar papéis e fazer a transação de dinheiro, e você aceitou receosamente.\n[NARRADOR] Quando se deu conta do que havia feitou, tentou voltar atrás, porém já era era tarde\n[NARRADOR] suas terras já estavam vendidas, e o dinheiro em vez de ir para você, foi para a conta de Emanuel.\n[NARRADOR] Desolado, enquanto ia para seu quarto, ficou tudo escuro, te deram um apagão. \n\n\n			Emanuel te matou.\n\n")
+					u.aguarde(2000)
 					morte()
 					GAMEOVER() 					
 					
@@ -618,11 +610,11 @@ fim()
 		GAMEOVER()
   }
      funcao mimosa(){
-     escreva("	                                        ██                  ░░      ██                  \n")
+     escreva("	                                        ██                          ██                  \n")
 	escreva("	                                      ██░░██                      ██░░██                \n")
 	escreva("	                                      ██░░██                      ██░░██                \n")
 	escreva("	                                ██████  ██░░██      ██  ██      ██░░██                  \n")
-	escreva("	              ░░░░          ████      ████░░░░██████████████████░░░░██                  \n")
+	escreva("	              	           ████      ████░░░░██████████████████░░░░██                  \n")
 	escreva("	                          ██        ████████░░░░░░██        ██░░░░████████              \n")
 	escreva("	                        ██        ██    ▒▒  ██████            ████    ▒▒  ██            \n")
 	escreva("	                      ████████    ██████  ▒▒                      ▒▒▒▒  ██              \n")
@@ -732,15 +724,3 @@ fim()
 		}	
 	}	
 }
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 47457; 
- * @DOBRAMENTO-CODIGO = [27, 48, 148, 145, 174, 197];
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
