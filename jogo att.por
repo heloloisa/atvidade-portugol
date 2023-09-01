@@ -703,7 +703,7 @@ fim()
 	{ //uma espécie de "escreva()" porém pausadamente. 
 							
 		caracter letra
-		inteiro velocidade = 1 //pausa padrão entre um caracter e outro.
+		inteiro velocidade = 50 //pausa padrão entre um caracter e outro.
 		
 		para(inteiro i = 0 ; i < tx.numero_caracteres(texto) ; i++){ //repete enquanto a frase inteiro não for escrita.
 			letra = tx.obter_caracter(texto, i) //obtem o caracter da frase.
