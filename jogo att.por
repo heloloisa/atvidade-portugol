@@ -1,10 +1,10 @@
 programa
 {
-	inclua biblioteca Tipos --> t
-	inclua biblioteca Texto --> tx
+     inclua biblioteca Tipos --> t
+     inclua biblioteca Texto --> tx
      inclua biblioteca Util--> u
     
-     cadeia usuario
+     	cadeia usuario
 	inteiro opcao = 0
 	cadeia estado
 	inteiro tempo
